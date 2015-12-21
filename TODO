@@ -1,1 +1,3 @@
+- Code JUnit tests
+- Disable HTTP caching for getting new questions web services
 - Integrate with Docker
