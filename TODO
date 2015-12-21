@@ -1,3 +1,4 @@
-- Code JUnit tests
+- Code JUnit tests (integrate with Guice to allow testing)
 - Disable HTTP caching for getting new questions web services
+- Use HATEOAS to get next/previous trainer states
 - Integrate with Docker
