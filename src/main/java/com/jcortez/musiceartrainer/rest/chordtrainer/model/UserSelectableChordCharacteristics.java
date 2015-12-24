@@ -9,30 +9,17 @@ import javax.xml.bind.annotation.XmlRootElement;
 // A singleton object that contains all of the chord characteristics that the
 // user can select to be tested by the chord ear trainer.
 @XmlRootElement
-@XmlAccessorType(XmlAccessType.FIELD)
+@XmlAccessorType(XmlAccessType.PROPERTY)
 public class UserSelectableChordCharacteristics
 {
     private static volatile UserSelectableChordCharacteristics instance = null;
-    // Chord qualities and chord inversions are stored here and presented to the
-    // user as Strings of their full names instead of their enum values.
-    @XmlElement
-    private ArrayList<String> trainerChordQualities = new ArrayList<String>();
-    @XmlElement
-    private ArrayList<String> trainerChordInversions = new ArrayList<String>();
+    private ChordQuality[] trainerChordQualities = null;
+    private ChordInversion[] trainerChordInversions = null;
 
     private UserSelectableChordCharacteristics()
     {
-        // Creating the lists of chord qualities and chord inversions from all
-        // possible enum values.
-        for (ChordQuality q : ChordQuality.values())
-        {
-            trainerChordQualities.add(q.getChordQualityName());
-        }
-
-        for (ChordInversion i : ChordInversion.values())
-        {
-            trainerChordInversions.add(i.getInversionName());
-        }
+        trainerChordQualities = ChordQuality.values();
+        trainerChordInversions = ChordInversion.values();
     }
 
     public static synchronized UserSelectableChordCharacteristics getInstance()
@@ -45,14 +32,34 @@ public class UserSelectableChordCharacteristics
         return instance;
     }
 
+    @XmlElement
     public ArrayList<String> getTrainerChordQualities()
     {
-        return trainerChordQualities;
+        // The ChordQuality enum values are converted to their full names to be
+        // presented to the user.
+        ArrayList<String> chordQualityNames = new ArrayList<String>();
+
+        for (ChordQuality q : trainerChordQualities)
+        {
+            chordQualityNames.add(q.getChordQualityName());
+        }
+
+        return chordQualityNames;
     }
 
+    @XmlElement
     public ArrayList<String> getTrainerChordInversions()
     {
-        return trainerChordInversions;
+        // The ChordInversion enum values are converted to their full names to be
+        // presented to the user.
+        ArrayList<String> chordInversionNames = new ArrayList<String>();
+
+        for (ChordInversion i : trainerChordInversions)
+        {
+            chordInversionNames.add(i.getInversionName());
+        }
+
+        return chordInversionNames;
     }
 
 }
