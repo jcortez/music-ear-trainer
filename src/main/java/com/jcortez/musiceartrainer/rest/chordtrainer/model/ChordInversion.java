@@ -4,7 +4,7 @@ package com.jcortez.musiceartrainer.rest.chordtrainer.model;
 public enum ChordInversion
 {
     ROOT_POS("Root Position"), // Chord is not inverted if this value is used.
-    FIRST_INV("First Inverison"),
+    FIRST_INV("First Inversion"),
     SECOND_INV("Second Inversion"),
     THIRD_INV("Third Inversion");
     

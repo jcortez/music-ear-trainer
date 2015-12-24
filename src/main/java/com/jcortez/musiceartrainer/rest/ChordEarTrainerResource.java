@@ -9,6 +9,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.TrainerMode;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.TrainerModes;
+import com.jcortez.musiceartrainer.rest.chordtrainer.model.UserSelectableChordCharacteristics;
 
 // REST web services for the chord ear trainer.
 @Path("/chord-ear-trainer")
@@ -56,11 +57,11 @@ public class ChordEarTrainerResource
     @GET
     @Path("/modes/custom")
     @Produces(MediaType.APPLICATION_JSON)
-    // Returns the list of chord characteristics that can be tested in Custom Mode.
-    public String getCustomModeChordCharacteristics()
+    // Returns lists of chord characteristics that the user can select to be
+    // tested in Custom Mode.
+    public UserSelectableChordCharacteristics getCustomModeChordCharacteristics()
     {
-        //TODO: Implement getCustomModeChordCharacteristics().
-        return "Test chord characteristics";
+        return UserSelectableChordCharacteristics.getInstance();
     }
 
     @GET
