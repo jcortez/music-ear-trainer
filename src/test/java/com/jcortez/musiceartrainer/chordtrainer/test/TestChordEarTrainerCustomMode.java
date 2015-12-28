@@ -1,7 +1,6 @@
 package com.jcortez.musiceartrainer.chordtrainer.test;
 
 import static org.junit.Assert.*;
-import java.util.ArrayList;
 import org.junit.Test;
 import com.jcortez.musiceartrainer.rest.ChordEarTrainerResource;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.UserSelectableChordCharacteristics;
@@ -19,26 +18,27 @@ public class TestChordEarTrainerCustomMode
     public void testGetCustomModeChordCharacteristics()
     {
         UserSelectableChordCharacteristics chordCharacteristics = restResource.getCustomModeChordCharacteristics();
-        ArrayList<String> qualities = chordCharacteristics.getTrainerChordQualities();
-        ArrayList<String> inversions = chordCharacteristics.getTrainerChordInversions();
+        String[] qualities = chordCharacteristics.getTrainerChordQualities();
+        String[] inversions = chordCharacteristics.getTrainerChordInversions();
 
-        assertEquals(12, qualities.size());
-        assertEquals(4, inversions.size());
-        assertEquals("Major", qualities.get(0));
-        assertEquals("Minor", qualities.get(1));
-        assertEquals("Diminished", qualities.get(2));
-        assertEquals("Augmented", qualities.get(3));
-        assertEquals("Dominant Seventh", qualities.get(4));
-        assertEquals("Major Seventh", qualities.get(5));
-        assertEquals("Minor Seventh", qualities.get(6));
-        assertEquals("Minor Major Seventh", qualities.get(7));
-        assertEquals("Half Diminished Seventh", qualities.get(8));
-        assertEquals("Diminished Seventh", qualities.get(9));
-        assertEquals("Sus 2", qualities.get(10));
-        assertEquals("Sus 4", qualities.get(11));
-        assertEquals("Root Position", inversions.get(0));
-        assertEquals("First Inversion", inversions.get(1));
-        assertEquals("Second Inversion", inversions.get(2));
-        assertEquals("Third Inversion", inversions.get(3));
+        assertEquals(12, qualities.length);
+        assertEquals(4, inversions.length);
+        assertTrue(TestUtilities.stringArrayContains(qualities, "Major"));
+        assertTrue(TestUtilities.stringArrayContains(qualities, "Minor"));
+        assertTrue(TestUtilities.stringArrayContains(qualities, "Diminished"));
+        assertTrue(TestUtilities.stringArrayContains(qualities, "Augmented"));
+        assertTrue(TestUtilities.stringArrayContains(qualities, "Dominant Seventh"));
+        assertTrue(TestUtilities.stringArrayContains(qualities, "Major Seventh"));
+        assertTrue(TestUtilities.stringArrayContains(qualities, "Minor Seventh"));
+        assertTrue(TestUtilities.stringArrayContains(qualities, "Minor Major Seventh"));
+        assertTrue(TestUtilities.stringArrayContains(qualities, "Half Diminished Seventh"));
+        assertTrue(TestUtilities.stringArrayContains(qualities, "Diminished Seventh"));
+        assertTrue(TestUtilities.stringArrayContains(qualities, "Sus 2"));
+        assertTrue(TestUtilities.stringArrayContains(qualities, "Sus 4"));
+        assertTrue(TestUtilities.stringArrayContains(inversions, "Root Position"));
+        assertTrue(TestUtilities.stringArrayContains(inversions, "First Inversion"));
+        assertTrue(TestUtilities.stringArrayContains(inversions, "Second Inversion"));
+        assertTrue(TestUtilities.stringArrayContains(inversions, "Third Inversion"));
     }
+
 }
