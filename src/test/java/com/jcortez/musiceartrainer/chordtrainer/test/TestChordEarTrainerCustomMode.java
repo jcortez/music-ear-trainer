@@ -23,22 +23,22 @@ public class TestChordEarTrainerCustomMode
 
         assertEquals(12, qualities.length);
         assertEquals(4, inversions.length);
-        assertTrue(TestUtilities.stringArrayContains(qualities, "Major"));
-        assertTrue(TestUtilities.stringArrayContains(qualities, "Minor"));
-        assertTrue(TestUtilities.stringArrayContains(qualities, "Diminished"));
-        assertTrue(TestUtilities.stringArrayContains(qualities, "Augmented"));
-        assertTrue(TestUtilities.stringArrayContains(qualities, "Dominant Seventh"));
-        assertTrue(TestUtilities.stringArrayContains(qualities, "Major Seventh"));
-        assertTrue(TestUtilities.stringArrayContains(qualities, "Minor Seventh"));
-        assertTrue(TestUtilities.stringArrayContains(qualities, "Minor Major Seventh"));
-        assertTrue(TestUtilities.stringArrayContains(qualities, "Half Diminished Seventh"));
-        assertTrue(TestUtilities.stringArrayContains(qualities, "Diminished Seventh"));
-        assertTrue(TestUtilities.stringArrayContains(qualities, "Sus 2"));
-        assertTrue(TestUtilities.stringArrayContains(qualities, "Sus 4"));
-        assertTrue(TestUtilities.stringArrayContains(inversions, "Root Position"));
-        assertTrue(TestUtilities.stringArrayContains(inversions, "First Inversion"));
-        assertTrue(TestUtilities.stringArrayContains(inversions, "Second Inversion"));
-        assertTrue(TestUtilities.stringArrayContains(inversions, "Third Inversion"));
+        assertEquals("Major", qualities[0]);
+        assertEquals("Minor", qualities[1]);
+        assertEquals("Diminished", qualities[2]);
+        assertEquals("Augmented", qualities[3]);
+        assertEquals("Dominant Seventh", qualities[4]);
+        assertEquals("Major Seventh", qualities[5]);
+        assertEquals("Minor Seventh", qualities[6]);
+        assertEquals("Minor Major Seventh", qualities[7]);
+        assertEquals("Half Diminished Seventh", qualities[8]);
+        assertEquals("Diminished Seventh", qualities[9]);
+        assertEquals("Sus 2", qualities[10]);
+        assertEquals("Sus 4", qualities[11]);
+        assertEquals("Root Position", inversions[0]);
+        assertEquals("First Inversion", inversions[1]);
+        assertEquals("Second Inversion", inversions[2]);
+        assertEquals("Third Inversion", inversions[3]);
     }
 
 }
