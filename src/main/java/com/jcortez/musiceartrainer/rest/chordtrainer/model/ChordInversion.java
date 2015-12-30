@@ -25,6 +25,14 @@ public enum ChordInversion
         return fullChordInversionNames.get(inversion);
     }
 
+    // Returns the enum value for the specified chord inversion name. If there
+    // is no enum value for the String, null is returned.
+    public static ChordInversion getChordInversionEnum(String inversionName)
+    {
+        ImmutableBiMap<String, ChordInversion> inverseMap = fullChordInversionNames.inverse();
+        return inverseMap.get(inversionName);
+    }
+
     // Returns an array of all of the full chord inversion names in the order
     // that they were inserted.
     public static String[] getAllFullChordInversionNames()
@@ -32,4 +40,5 @@ public enum ChordInversion
         Collection<String> namesCollection = fullChordInversionNames.values();
         return namesCollection.toArray(new String[namesCollection.size()]);
     }
+
 }

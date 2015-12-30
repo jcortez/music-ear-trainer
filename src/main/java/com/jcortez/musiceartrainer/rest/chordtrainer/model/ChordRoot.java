@@ -34,6 +34,14 @@ public enum ChordRoot
         return fullChordRootNames.get(root);
     }
 
+    // Returns the enum value for the specified chord root name. If there is no
+    // enum value for the String, null is returned.
+    public static ChordRoot getChordRootEnum(String chordRootName)
+    {
+        ImmutableBiMap<String, ChordRoot> inverseMap = fullChordRootNames.inverse();
+        return inverseMap.get(chordRootName);
+    }
+
     // Returns an array of all of the full chord root names in the order that
     // they were inserted.
     public static String[] getAllFullChordRootNames()

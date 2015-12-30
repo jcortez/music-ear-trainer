@@ -34,6 +34,14 @@ public enum ChordQuality
         return fullChordQualityNames.get(quality);
     }
 
+    // Returns the enum value for the specified chord quality name. If there
+    // is no enum value for the String, null is returned.
+    public static ChordQuality getChordQualityEnum(String chordQualityName)
+    {
+        ImmutableBiMap<String, ChordQuality> inverseMap = fullChordQualityNames.inverse();
+        return inverseMap.get(chordQualityName);
+    }
+
     // Returns an array of all of the full chord quality names in the order
     // that they were inserted.
     public static String[] getAllFullChordQualityNames()
