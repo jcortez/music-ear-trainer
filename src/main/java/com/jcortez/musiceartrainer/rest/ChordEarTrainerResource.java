@@ -1,12 +1,14 @@
 package com.jcortez.musiceartrainer.rest;
 
 import java.util.List;
+import javax.ws.rs.BeanParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import com.jcortez.musiceartrainer.rest.chordtrainer.model.ChordCharacteristicsToTest;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.TrainerMode;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.TrainerModes;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.UserSelectableChordCharacteristics;
@@ -68,8 +70,10 @@ public class ChordEarTrainerResource
     @Path("/modes/custom/question")
     @Produces(MediaType.APPLICATION_JSON)
     // Returns the next question for Custom Mode with the chord characteristics that
-    // were specified by the user.
-    public String getNextCustomModeQuestion()
+    // were specified by the user. The chord characteristics are sent through the
+    // appropriate query parameters. If no query parameters are specified, all
+    // possible chord characteristics can be tested.
+    public String getNextCustomModeQuestion(@BeanParam ChordCharacteristicsToTest chordCharacteristicsToTest)
     {
         //TODO: Implement getNextCustomModeQuestion().
         return "Next test custom mode question";
