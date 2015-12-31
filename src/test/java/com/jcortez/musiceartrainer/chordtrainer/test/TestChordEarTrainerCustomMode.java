@@ -2,14 +2,23 @@ package com.jcortez.musiceartrainer.chordtrainer.test;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
+import com.google.inject.Guice;
+import com.google.inject.Injector;
 import com.jcortez.musiceartrainer.rest.ChordEarTrainerResource;
+import com.jcortez.musiceartrainer.rest.ChordEarTrainerServletModule;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.UserSelectableChordCharacteristics;
 
 // Tests the methods called by the REST web services pertaining to the custom
 // mode for the chord ear trainer.
 public class TestChordEarTrainerCustomMode
 {
-    private ChordEarTrainerResource restResource = new ChordEarTrainerResource();
+    private ChordEarTrainerResource restResource;
+
+    public TestChordEarTrainerCustomMode()
+    {
+        Injector injector = Guice.createInjector(new ChordEarTrainerServletModule());
+        restResource = injector.getInstance(ChordEarTrainerResource.class);
+    }
 
     @Test
     // Tests the getCustomModeChordCharacteristics() method in
