@@ -1,39 +1,13 @@
 package com.jcortez.musiceartrainer.rest.chordtrainer.model;
 
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-
 // Corresponds to an chord ear trainer mode.
-@XmlRootElement
-@XmlAccessorType(XmlAccessType.FIELD)
-public abstract class TrainerMode
+public interface TrainerMode
 {
-    @XmlElement
-    private String modeName = "";
-
-    public TrainerMode()
-    {
-        modeName = "";
-    }
-
-    public TrainerMode(String name)
-    {
-        modeName = name;
-    }
-
     // Returns the name of this game mode.
-    public String getName()
-    {
-        return modeName;
-    }
+    public String getName();
 
-    // Sets the name of this game mode.
-    public void setName(String name)
-    {
-        modeName = name;
-    }
-
-    //TODO: add abstract methods for processing questions/answers
+    // Determines if the user's answer is correct. This method executes the
+    // default logic but subclasses can override if necessary. True is returned
+    // if the user's answer is correct, false is returned if it is not correct.
+    public boolean checkAnswer(Chord userAnswer, Chord correctAnswer);
 }

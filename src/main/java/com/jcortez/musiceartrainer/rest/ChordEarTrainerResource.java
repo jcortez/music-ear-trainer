@@ -1,6 +1,6 @@
 package com.jcortez.musiceartrainer.rest;
 
-import java.util.List;
+import java.util.ArrayList;
 import javax.ws.rs.BeanParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -8,22 +8,37 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import com.google.inject.Inject;
+import com.jcortez.musiceartrainer.rest.chordtrainer.model.ChallengeMode;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.ChordCharacteristicsToTest;
+import com.jcortez.musiceartrainer.rest.chordtrainer.model.CustomMode;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.TrainerMode;
-import com.jcortez.musiceartrainer.rest.chordtrainer.model.TrainerModes;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.UserSelectableChordCharacteristics;
 
 // REST web services for the chord ear trainer.
 @Path("/chord-ear-trainer")
 public class ChordEarTrainerResource
 {
+    private final ChallengeMode challengeMode;
+    private final CustomMode customMode;
+
+    @Inject
+    public ChordEarTrainerResource(final ChallengeMode challengeMode, final CustomMode customMode)
+    {
+        this.challengeMode = challengeMode;
+        this.customMode = customMode;
+    }
+
     @GET
     @Path("/modes")
     @Produces(MediaType.APPLICATION_JSON)
     // Returns the chord ear training modes supported by the ear trainer.
-    public List<TrainerMode> getEarTrainerModes()
+    public ArrayList<TrainerMode> getEarTrainerModes()
     {
-        return TrainerModes.getInstance().getTrainerModes();
+        ArrayList<TrainerMode> trainerModes = new ArrayList<TrainerMode>();
+        trainerModes.add(challengeMode);
+        trainerModes.add(customMode);
+        return trainerModes;
     }
 
     @GET
