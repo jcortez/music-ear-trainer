@@ -96,7 +96,7 @@ public class TestChordCharacteristicsToTest
         characteristics.setChordQualities(testChordQualitiesNames);
 
         HashSet<ChordQuality> qualities = characteristics.getChordQualities();
-        ChordQuality[] allQualities = ChordQuality.class.getEnumConstants();
+        ChordQuality[] allQualities = ChordQuality.values();
         assertEquals(allQualities.length, qualities.size());
         for (ChordQuality q : allQualities)
         {
@@ -187,7 +187,7 @@ public class TestChordCharacteristicsToTest
         characteristics.setChordInversions(testChordInversionsNames);
 
         HashSet<ChordInversion> inversions = characteristics.getChordInversions();
-        ChordInversion[] allInversions = ChordInversion.class.getEnumConstants();
+        ChordInversion[] allInversions = ChordInversion.values();
         assertEquals(allInversions.length, inversions.size());
         for (ChordInversion i : allInversions)
         {

@@ -39,7 +39,7 @@ public class ChordCharacteristicsToTest
 
         if (chordQualities.length == 1 && chordQualities[0].equals("all"))
         {
-            List<ChordQuality> allEnums = Arrays.asList(ChordQuality.class.getEnumConstants());
+            List<ChordQuality> allEnums = Arrays.asList(ChordQuality.values());
             chordQualitiesEnums = new HashSet<ChordQuality>(allEnums);
             return;
         }
@@ -74,7 +74,7 @@ public class ChordCharacteristicsToTest
 
         if (chordInversions.length == 1 && chordInversions[0].equals("all"))
         {
-            List<ChordInversion> allEnums = Arrays.asList(ChordInversion.class.getEnumConstants());
+            List<ChordInversion> allEnums = Arrays.asList(ChordInversion.values());
             chordInversionsEnums = new HashSet<ChordInversion>(allEnums);
             return;
         }
