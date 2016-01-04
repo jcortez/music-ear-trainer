@@ -1,7 +1,7 @@
 package com.jcortez.musiceartrainer.rest.chordtrainer.questions;
 
 import java.util.ArrayList;
-import java.util.HashSet;
+import java.util.Set;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.Chord;
@@ -49,7 +49,7 @@ public class QuestionSelectorImpl implements QuestionSelector
 
     // Selects a random chord quality to test from the specified set of chord
     // qualities.
-    private ChordQuality selectRandomChordQuality(HashSet<ChordQuality> chordQualities)
+    private ChordQuality selectRandomChordQuality(Set<ChordQuality> chordQualities)
     {
         ArrayList<ChordQuality> qualitiesToSelectFrom = new ArrayList<ChordQuality>(chordQualities);
         int randomIndex = randomNumberGenerator.nextInt(qualitiesToSelectFrom.size());
@@ -58,7 +58,7 @@ public class QuestionSelectorImpl implements QuestionSelector
 
     // Selects a random chord inversion to test from the specified set of chord
     // inversions.
-    private ChordInversion selectRandomChordInversion(HashSet<ChordInversion> chordInversions)
+    private ChordInversion selectRandomChordInversion(Set<ChordInversion> chordInversions)
     {
         ArrayList<ChordInversion> inversionsToSelectFrom = new ArrayList<ChordInversion>(chordInversions);
         int randomIndex = randomNumberGenerator.nextInt(inversionsToSelectFrom.size());

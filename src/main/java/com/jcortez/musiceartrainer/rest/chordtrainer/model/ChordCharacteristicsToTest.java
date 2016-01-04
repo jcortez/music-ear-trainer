@@ -1,8 +1,9 @@
 package com.jcortez.musiceartrainer.rest.chordtrainer.model;
 
 import java.util.Arrays;
-import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Set;
 import javax.ws.rs.DefaultValue;
 import javax.ws.rs.QueryParam;
 
@@ -12,13 +13,13 @@ import javax.ws.rs.QueryParam;
 // chord roots can be selected for testing, so they are not stored here.
 public class ChordCharacteristicsToTest
 {
-    private HashSet<ChordQuality> chordQualitiesEnums = null;
-    private HashSet<ChordInversion> chordInversionsEnums = null;
+    private LinkedHashSet<ChordQuality> chordQualitiesEnums = null;
+    private LinkedHashSet<ChordInversion> chordInversionsEnums = null;
 
     public ChordCharacteristicsToTest()
     {
-        chordQualitiesEnums = new HashSet<ChordQuality>();
-        chordInversionsEnums = new HashSet<ChordInversion>();
+        chordQualitiesEnums = new LinkedHashSet<ChordQuality>();
+        chordInversionsEnums = new LinkedHashSet<ChordInversion>();
     }
 
     @DefaultValue("all")
@@ -40,7 +41,7 @@ public class ChordCharacteristicsToTest
         if (chordQualities.length == 1 && chordQualities[0].equals("all"))
         {
             List<ChordQuality> allEnums = Arrays.asList(ChordQuality.values());
-            chordQualitiesEnums = new HashSet<ChordQuality>(allEnums);
+            chordQualitiesEnums = new LinkedHashSet<ChordQuality>(allEnums);
             return;
         }
 
@@ -75,7 +76,7 @@ public class ChordCharacteristicsToTest
         if (chordInversions.length == 1 && chordInversions[0].equals("all"))
         {
             List<ChordInversion> allEnums = Arrays.asList(ChordInversion.values());
-            chordInversionsEnums = new HashSet<ChordInversion>(allEnums);
+            chordInversionsEnums = new LinkedHashSet<ChordInversion>(allEnums);
             return;
         }
 
@@ -92,13 +93,13 @@ public class ChordCharacteristicsToTest
     }
     
     // Gets all of the chord qualities that the chord trainer can test.
-    public HashSet<ChordQuality> getChordQualities()
+    public Set<ChordQuality> getChordQualities()
     {
         return chordQualitiesEnums;
     }
 
     // Gets all of the chord inversions that the chord trainer can test.
-    public HashSet<ChordInversion> getChordInversions()
+    public Set<ChordInversion> getChordInversions()
     {
         return chordInversionsEnums;
     }

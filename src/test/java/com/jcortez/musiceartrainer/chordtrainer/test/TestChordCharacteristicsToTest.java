@@ -1,7 +1,7 @@
 package com.jcortez.musiceartrainer.chordtrainer.test;
 
 import static org.junit.Assert.*;
-import java.util.HashSet;
+import java.util.Set;
 import org.junit.Test;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.ChordCharacteristicsToTest;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.ChordInversion;
@@ -21,7 +21,7 @@ public class TestChordCharacteristicsToTest
         testChordQualitiesNames[1] = "Minor Major Seventh";
         characteristics.setChordQualities(testChordQualitiesNames);
 
-        HashSet<ChordQuality> qualities = characteristics.getChordQualities();
+        Set<ChordQuality> qualities = characteristics.getChordQualities();
         assertEquals(2, qualities.size());
         assertTrue(qualities.contains(ChordQuality.DIM));
         assertTrue(qualities.contains(ChordQuality.MIN_MAJ_SEVENTH));
@@ -46,7 +46,7 @@ public class TestChordCharacteristicsToTest
         testChordQualitiesNames[1] = "Diminished Seventh";
         characteristics.setChordQualities(testChordQualitiesNames);
 
-        HashSet<ChordQuality> qualities = characteristics.getChordQualities();
+        Set<ChordQuality> qualities = characteristics.getChordQualities();
         assertEquals(2, qualities.size());
         assertTrue(qualities.contains(ChordQuality.SUS_2));
         assertTrue(qualities.contains(ChordQuality.SUS_4));
@@ -62,7 +62,7 @@ public class TestChordCharacteristicsToTest
         testChordQualitiesNames[1] = "Major";
         characteristics.setChordQualities(testChordQualitiesNames);
 
-        HashSet<ChordQuality> qualities = characteristics.getChordQualities();
+        Set<ChordQuality> qualities = characteristics.getChordQualities();
         assertEquals(1, qualities.size());
         assertTrue(qualities.contains(ChordQuality.MAJ));
     }
@@ -79,7 +79,7 @@ public class TestChordCharacteristicsToTest
         testChordQualitiesNames[2] = "Major";
         characteristics.setChordQualities(testChordQualitiesNames);
 
-        HashSet<ChordQuality> qualities = characteristics.getChordQualities();
+        Set<ChordQuality> qualities = characteristics.getChordQualities();
         assertEquals(2, qualities.size());
         assertTrue(qualities.contains(ChordQuality.MAJ));
         assertTrue(qualities.contains(ChordQuality.MIN));
@@ -95,7 +95,7 @@ public class TestChordCharacteristicsToTest
         testChordQualitiesNames[0] = "all";
         characteristics.setChordQualities(testChordQualitiesNames);
 
-        HashSet<ChordQuality> qualities = characteristics.getChordQualities();
+        Set<ChordQuality> qualities = characteristics.getChordQualities();
         ChordQuality[] allQualities = ChordQuality.values();
         assertEquals(allQualities.length, qualities.size());
         for (ChordQuality q : allQualities)
@@ -114,7 +114,7 @@ public class TestChordCharacteristicsToTest
         testChordInversionsNames[1] = "Third Inversion";
         characteristics.setChordInversions(testChordInversionsNames);
 
-        HashSet<ChordInversion> inversions = characteristics.getChordInversions();
+        Set<ChordInversion> inversions = characteristics.getChordInversions();
         assertEquals(2, inversions.size());
         assertTrue(inversions.contains(ChordInversion.ROOT_POS));
         assertTrue(inversions.contains(ChordInversion.THIRD_INV));
@@ -135,7 +135,7 @@ public class TestChordCharacteristicsToTest
         testChordInversionsNames[1] = "Second Inversion";
         characteristics.setChordInversions(testChordInversionsNames);
 
-        HashSet<ChordInversion> inversions = characteristics.getChordInversions();
+        Set<ChordInversion> inversions = characteristics.getChordInversions();
         assertEquals(2, inversions.size());
         assertTrue(inversions.contains(ChordInversion.ROOT_POS));
         assertTrue(inversions.contains(ChordInversion.THIRD_INV));
@@ -152,7 +152,7 @@ public class TestChordCharacteristicsToTest
         testChordInversionsNames[1] = "TEST";
         characteristics.setChordInversions(testChordInversionsNames);
 
-        HashSet<ChordInversion> inversions = characteristics.getChordInversions();
+        Set<ChordInversion> inversions = characteristics.getChordInversions();
         assertEquals(1, inversions.size());
         assertTrue(inversions.contains(ChordInversion.FIRST_INV));
     }
@@ -170,7 +170,7 @@ public class TestChordCharacteristicsToTest
         testChordInversionsNames[2] = "First Inversion";
         characteristics.setChordInversions(testChordInversionsNames);
 
-        HashSet<ChordInversion> inversions = characteristics.getChordInversions();
+        Set<ChordInversion> inversions = characteristics.getChordInversions();
         assertEquals(2, inversions.size());
         assertTrue(inversions.contains(ChordInversion.FIRST_INV));
         assertTrue(inversions.contains(ChordInversion.SECOND_INV));
@@ -186,7 +186,7 @@ public class TestChordCharacteristicsToTest
         testChordInversionsNames[0] = "all";
         characteristics.setChordInversions(testChordInversionsNames);
 
-        HashSet<ChordInversion> inversions = characteristics.getChordInversions();
+        Set<ChordInversion> inversions = characteristics.getChordInversions();
         ChordInversion[] allInversions = ChordInversion.values();
         assertEquals(allInversions.length, inversions.size());
         for (ChordInversion i : allInversions)
