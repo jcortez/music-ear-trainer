@@ -6,10 +6,6 @@
   <display-name>Music Ear Trainer</display-name>
 
   <context-param>
-    <param-name>resteasy.servlet.mapping.prefix</param-name>
-    <param-value>/rest</param-value>
-  </context-param>
-  <context-param>
       <param-name>resteasy.guice.modules</param-name>
       <param-value>com.jcortez.musiceartrainer.rest.ChordEarTrainerServletModule</param-value>
   </context-param>
@@ -23,10 +19,19 @@
   <servlet>
     <servlet-name>MusicEarTrainer</servlet-name>
     <servlet-class>org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher</servlet-class>
+    <init-param>
+      <param-name>resteasy.servlet.mapping.prefix</param-name>
+      <param-value>/rest</param-value>
+    </init-param>
   </servlet>
 
   <servlet-mapping>
     <servlet-name>MusicEarTrainer</servlet-name>
-    <url-pattern>/*</url-pattern>
+    <url-pattern>/rest/*</url-pattern>
   </servlet-mapping>
+
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+
 </web-app>
