@@ -21,12 +21,15 @@ public class ChordEarTrainerResource
 {
     private final ChallengeMode challengeMode;
     private final CustomMode customMode;
+    private final UserSelectableChordCharacteristics userSelectableChordCharacteristics;
 
     @Inject
-    public ChordEarTrainerResource(final ChallengeMode challengeMode, final CustomMode customMode)
+    public ChordEarTrainerResource(final ChallengeMode challengeMode, final CustomMode customMode,
+            final UserSelectableChordCharacteristics userSelectableChordCharacteristics)
     {
         this.challengeMode = challengeMode;
         this.customMode = customMode;
+        this.userSelectableChordCharacteristics = userSelectableChordCharacteristics;
     }
 
     @GET
@@ -78,7 +81,7 @@ public class ChordEarTrainerResource
     // tested in Custom Mode.
     public UserSelectableChordCharacteristics getCustomModeChordCharacteristics()
     {
-        return UserSelectableChordCharacteristics.getInstance();
+        return userSelectableChordCharacteristics;
     }
 
     @GET
