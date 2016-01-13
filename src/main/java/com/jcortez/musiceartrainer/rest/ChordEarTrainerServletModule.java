@@ -11,6 +11,8 @@ import com.jcortez.musiceartrainer.rest.chordtrainer.model.UserSelectableChordCh
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.UserSelectableChordCharacteristicsImpl;
 import com.jcortez.musiceartrainer.rest.chordtrainer.questions.ChordTrainerRandomNumberGenerator;
 import com.jcortez.musiceartrainer.rest.chordtrainer.questions.ChordTrainerRandomNumberGeneratorImpl;
+import com.jcortez.musiceartrainer.rest.chordtrainer.questions.QuestionSelector;
+import com.jcortez.musiceartrainer.rest.chordtrainer.questions.QuestionSelectorImpl;
 
 // A class that configures the Guice bindings that are used by the chord ear
 // trainer.
@@ -25,5 +27,6 @@ public class ChordEarTrainerServletModule extends AbstractModule
         bind(ChordFileStore.class).to(DummyChordFileStore.class);
         bind(ChordTrainerRandomNumberGenerator.class).to(ChordTrainerRandomNumberGeneratorImpl.class);
         bind(UserSelectableChordCharacteristics.class).to(UserSelectableChordCharacteristicsImpl.class);
+        bind(QuestionSelector.class).to(QuestionSelectorImpl.class);
     }
 }

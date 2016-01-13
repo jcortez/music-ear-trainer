@@ -4,6 +4,7 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
 
 // A class corresponding to a question that the chord ear trainer presents to
 // the user.
@@ -24,7 +25,6 @@ public class Question
     }
 
     // Sets the MIDI file name.
-    @XmlElement
     public void setQuestionMidiFileName(String file)
     {
         questionMidiFileName = file;
@@ -38,6 +38,7 @@ public class Question
     }
  
     // Returns the correct answer for this question.
+    @XmlTransient
     public Chord getAnswer()
     {
         return answer;

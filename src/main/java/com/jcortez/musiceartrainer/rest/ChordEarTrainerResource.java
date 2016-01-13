@@ -12,6 +12,7 @@ import com.google.inject.Inject;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.ChallengeMode;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.ChordCharacteristicsToTest;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.CustomMode;
+import com.jcortez.musiceartrainer.rest.chordtrainer.model.Question;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.TrainerMode;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.UserSelectableChordCharacteristics;
 
@@ -91,10 +92,16 @@ public class ChordEarTrainerResource
     // were specified by the user. The chord characteristics are sent through the
     // appropriate query parameters. If no query parameters are specified, all
     // possible chord characteristics can be tested.
-    public String getNextCustomModeQuestion(@BeanParam ChordCharacteristicsToTest chordCharacteristicsToTest)
+    public Question getNextCustomModeQuestion(@BeanParam ChordCharacteristicsToTest chordCharacteristicsToTest)
     {
-        //TODO: Implement getNextCustomModeQuestion().
-        return "Next test custom mode question";
+        if (chordCharacteristicsToTest == null)
+        {
+            return null;
+        }
+        else
+        {
+            return customMode.getNextQuestion(chordCharacteristicsToTest);
+        }
     }
 
     @POST

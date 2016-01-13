@@ -32,4 +32,11 @@ public class ChallengeModeImpl implements ChallengeMode
         return false;
     }
 
+    @Override
+    public Question getNextQuestion(int challengeId)
+    {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
 }

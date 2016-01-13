@@ -7,7 +7,6 @@ import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.Provides;
 import com.google.inject.name.Named;
-import com.google.inject.name.Names;
 import com.jcortez.musiceartrainer.chordtrainer.test.mocks.MockRandomNumberGenerator;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.Chord;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.ChordCharacteristicsToTest;

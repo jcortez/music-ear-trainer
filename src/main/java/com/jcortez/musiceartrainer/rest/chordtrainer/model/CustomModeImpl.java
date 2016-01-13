@@ -4,7 +4,9 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import com.google.inject.Inject;
 import com.google.inject.Singleton;
+import com.jcortez.musiceartrainer.rest.chordtrainer.questions.QuestionSelector;
 
 // A class that represents the Custom Mode of the chord ear trainer.
 @Singleton
@@ -13,9 +15,12 @@ import com.google.inject.Singleton;
 public class CustomModeImpl implements CustomMode
 {
     private static final String CUSTOM_MODE_NAME = "Custom Mode";
+    private QuestionSelector questionSelector = null;
 
-    public CustomModeImpl() 
+    @Inject
+    public CustomModeImpl(QuestionSelector questionSelector)
     {
+        this.questionSelector = questionSelector;
     }
 
     @Override
@@ -30,6 +35,17 @@ public class CustomModeImpl implements CustomMode
     {
         // TODO Auto-generated method stub
         return false;
+    }
+
+    @Override
+    public Question getNextQuestion(ChordCharacteristicsToTest chordCharacteristics)
+    {
+        if (chordCharacteristics == null)
+        {
+            return null;
+        }
+
+        return questionSelector.selectNextQuestion(chordCharacteristics);
     }
 
 }
