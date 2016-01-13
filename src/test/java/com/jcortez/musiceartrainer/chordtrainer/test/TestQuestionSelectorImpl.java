@@ -1,12 +1,14 @@
 package com.jcortez.musiceartrainer.chordtrainer.test;
 
-import java.util.ArrayList;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import com.google.inject.AbstractModule;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
-import com.google.inject.Singleton;
+import com.google.inject.Provides;
+import com.google.inject.name.Named;
+import com.google.inject.name.Names;
+import com.jcortez.musiceartrainer.chordtrainer.test.mocks.MockRandomNumberGenerator;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.Chord;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.ChordCharacteristicsToTest;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.ChordFileStore;
@@ -18,43 +20,12 @@ import com.jcortez.musiceartrainer.rest.chordtrainer.model.Question;
 import com.jcortez.musiceartrainer.rest.chordtrainer.questions.ChordTrainerRandomNumberGenerator;
 import com.jcortez.musiceartrainer.rest.chordtrainer.questions.QuestionSelectorImpl;
 import static org.junit.Assert.*;
+import java.util.ArrayList;
 
 // Tests the QuestionSelectorImpl class.
 public class TestQuestionSelectorImpl
 {
     private static QuestionSelectorImpl questionSelector = null;
-
-    // Mock ChordTrainerRandomNumberGenerator object for the tests in this class.
-    @Singleton
-    private static class MockRandomNumberGenerator implements ChordTrainerRandomNumberGenerator
-    {
-        private int currentIndex = 0;
-        private ArrayList<Integer> mockRandomNextInts = null;
-
-        public MockRandomNumberGenerator()
-        {
-            mockRandomNextInts = new ArrayList<Integer>();
-            // Random values returned for the testSelectNextQuestionOneChordCharacteristic()
-            // test.
-            mockRandomNextInts.add(0);
-            mockRandomNextInts.add(0);
-            mockRandomNextInts.add(0);
-            // Random values returned for the testSelectNextQuestionAllCharacteristics()
-            // test.
-            mockRandomNextInts.add(5);
-            mockRandomNextInts.add(11);
-            mockRandomNextInts.add(1);
-        }
-
-        @Override
-        public int nextInt(int end)
-        {
-            int randomNextInt = mockRandomNextInts.get(currentIndex);
-            currentIndex++;
-            return randomNextInt;
-        }
-        
-    }
 
     @BeforeClass
     public static void setup()
@@ -64,6 +35,23 @@ public class TestQuestionSelectorImpl
             protected void configure() {
                 bind(ChordFileStore.class).to(DummyChordFileStore.class);
                 bind(ChordTrainerRandomNumberGenerator.class).to(MockRandomNumberGenerator.class);
+            }
+            @Provides
+            @Named("randomValues")
+            private ArrayList<Integer> getRandomValues()
+            {
+                ArrayList<Integer> mockRandomNextInts = new ArrayList<Integer>();
+                // Random values returned for the testSelectNextQuestionOneChordCharacteristic()
+                // test.
+                mockRandomNextInts.add(0);
+                mockRandomNextInts.add(0);
+                mockRandomNextInts.add(0);
+                // Random values returned for the testSelectNextQuestionAllCharacteristics()
+                // test.
+                mockRandomNextInts.add(5);
+                mockRandomNextInts.add(11);
+                mockRandomNextInts.add(1);
+                return mockRandomNextInts;
             }
         });
         questionSelector = injector.getInstance(QuestionSelectorImpl.class);
