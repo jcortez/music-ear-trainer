@@ -26,10 +26,10 @@ public class ChallengeModeImpl implements ChallengeMode
     }
 
     @Override
-    public boolean checkAnswer(Chord userAnswer, Chord correctAnswer)
+    public AnswerResponse checkAnswer(Answer userAnswer)
     {
         // TODO Auto-generated method stub
-        return false;
+        return new AnswerResponse();
     }
 
     @Override

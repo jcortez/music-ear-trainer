@@ -6,4 +6,6 @@ public interface ChordFileStore
 {
     // Gets the MIDI file name for the specified chord.
     public String getChordMidiFileName(Chord chord);
+    // Gets the Chord object for the specified MIDI file name.
+    public Chord getChordForMidiFile(String midiFileName);
 }

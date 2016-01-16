@@ -10,6 +10,8 @@ import com.google.inject.Provides;
 import com.google.inject.name.Named;
 import com.jcortez.musiceartrainer.chordtrainer.test.mocks.MockRandomNumberGenerator;
 import com.jcortez.musiceartrainer.rest.ChordEarTrainerResource;
+import com.jcortez.musiceartrainer.rest.chordtrainer.model.Answer;
+import com.jcortez.musiceartrainer.rest.chordtrainer.model.AnswerResponse;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.ChallengeMode;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.ChallengeModeImpl;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.Chord;
@@ -117,5 +119,42 @@ public class TestChordEarTrainerCustomMode
         assertEquals(ChordRoot.D, answer.getChordRoot());
         assertEquals(ChordQuality.MIN_MAJ_SEVENTH, answer.getChordQuality());
         assertEquals(ChordInversion.ROOT_POS, answer.getChordInversion());
+    }
+
+    @Test
+    // Tests calling the submitCustomModeAnswer() method when the user's answer
+    // is null.
+    public void testSubmitCustomModeAnswerNullAnswer()
+    {
+        AnswerResponse response = restResource.submitCustomModeAnswer(null);
+        assertNull(response);
+    }
+
+    @Test
+    // Tests calling the submitCustomModeAnswer() method to submit a correct
+    // answer.
+    public void testSubmitCustomModeAnswerCorrectAnswer()
+    {
+        Answer answer = new Answer("test.midi",
+                new Chord(ChordRoot.C, ChordQuality.MAJ, ChordInversion.ROOT_POS));
+        AnswerResponse response = restResource.submitCustomModeAnswer(answer);
+        assertTrue(response.getUserAnswerCorrect());
+        assertEquals(ChordRoot.C, response.getCorrectAnswer().getChordRoot());
+        assertEquals(ChordQuality.MAJ, response.getCorrectAnswer().getChordQuality());
+        assertEquals(ChordInversion.ROOT_POS, response.getCorrectAnswer().getChordInversion());
+    }
+
+    @Test
+    // Tests calling the submitCustomModeAnswer() method to submit an incorrect
+    // answer.
+    public void testSubmitCustomModeAnswerIncorrectAnswer()
+    {
+        Answer answer = new Answer("test.midi",
+                new Chord(ChordRoot.D, ChordQuality.MIN_SEVENTH, ChordInversion.THIRD_INV));
+        AnswerResponse response = restResource.submitCustomModeAnswer(answer);
+        assertFalse(response.getUserAnswerCorrect());
+        assertEquals(ChordRoot.C, response.getCorrectAnswer().getChordRoot());
+        assertEquals(ChordQuality.MAJ, response.getCorrectAnswer().getChordQuality());
+        assertEquals(ChordInversion.ROOT_POS, response.getCorrectAnswer().getChordInversion());
     }
 }

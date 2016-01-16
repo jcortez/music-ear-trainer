@@ -1,12 +1,21 @@
 package com.jcortez.musiceartrainer.rest.chordtrainer.model;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
 // A data structure corresponding to a chord in the chord ear trainer. A Chord
 // object will contain all chord characteristics.
+@XmlRootElement
+@XmlAccessorType(XmlAccessType.PROPERTY)
 public class Chord
 {
     private ChordRoot chordRoot = null;
     private ChordQuality chordQuality = null;
     private ChordInversion chordInversion = null;
+
+    public Chord() { }
 
     public Chord(ChordRoot root, ChordQuality quality, ChordInversion inversion)
     {
@@ -34,6 +43,36 @@ public class Chord
     public ChordInversion getChordInversion()
     {
         return chordInversion;
+    }
+
+    // Sets the chord root using the full chord root name.
+    @XmlElement
+    public void setChordRoot(String fullChordRootName)
+    {
+        if (fullChordRootName != null)
+        {
+            chordRoot = ChordRoot.getChordRootEnum(fullChordRootName);
+        }
+    }
+
+    // Sets the chord quality using the full chord quality name.
+    @XmlElement
+    public void setChordQuality(String fullChordQualityName)
+    {
+        if (fullChordQualityName != null)
+        {
+            chordQuality = ChordQuality.getChordQualityEnum(fullChordQualityName);
+        }
+    }
+
+    // Sets the chord inversion using the full chord inversion name.
+    @XmlElement
+    public void setChordInversion(String fullChordInversionName)
+    {
+        if (fullChordInversionName != null)
+        {
+            chordInversion = ChordInversion.getChordInversionEnum(fullChordInversionName);
+        }
     }
 
     @Override

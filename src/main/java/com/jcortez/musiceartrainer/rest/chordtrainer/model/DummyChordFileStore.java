@@ -12,4 +12,10 @@ public class DummyChordFileStore implements ChordFileStore
     {
         return "test.midi";
     }
+
+    @Override
+    public Chord getChordForMidiFile(String midiFileName)
+    {
+        return new Chord(ChordRoot.C, ChordQuality.MAJ, ChordInversion.ROOT_POS);
+    }
 }

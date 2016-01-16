@@ -8,3 +8,4 @@ REST web services implemented:
 /modes
 /modes/custom
 /modes/custom/question
+/modes/custom/answer

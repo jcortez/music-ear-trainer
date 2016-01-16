@@ -9,6 +9,8 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import com.google.inject.Inject;
+import com.jcortez.musiceartrainer.rest.chordtrainer.model.Answer;
+import com.jcortez.musiceartrainer.rest.chordtrainer.model.AnswerResponse;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.ChallengeMode;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.ChordCharacteristicsToTest;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.CustomMode;
@@ -109,10 +111,16 @@ public class ChordEarTrainerResource
     @Produces(MediaType.APPLICATION_JSON)
     // Submits the user's answer for Custom Mode with the chord characteristics that
     // were specified by the user.
-    public String submitCustomModeAnswer()
+    public AnswerResponse submitCustomModeAnswer(Answer userAnswer)
     {
-        //TODO: Implement submitCustomModeAnswer().
-        return "Answer for custom mode is correct.";
+        if (userAnswer == null)
+        {
+            return null;
+        }
+        else
+        {
+            return customMode.checkAnswer(userAnswer);
+        }
     }
 
 }
