@@ -6,9 +6,10 @@ import com.jcortez.musiceartrainer.rest.chordtrainer.model.ChallengeModeImpl;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.ChordFileStore;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.CustomMode;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.CustomModeImpl;
-import com.jcortez.musiceartrainer.rest.chordtrainer.model.DummyChordFileStore;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.UserSelectableChordCharacteristics;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.UserSelectableChordCharacteristicsImpl;
+import com.jcortez.musiceartrainer.rest.chordtrainer.model.XMLChordFileStore;
+import com.jcortez.musiceartrainer.rest.chordtrainer.model.XMLChordFileStore.QuestionXMLFile;
 import com.jcortez.musiceartrainer.rest.chordtrainer.questions.ChordTrainerRandomNumberGenerator;
 import com.jcortez.musiceartrainer.rest.chordtrainer.questions.ChordTrainerRandomNumberGeneratorImpl;
 import com.jcortez.musiceartrainer.rest.chordtrainer.questions.QuestionSelector;
@@ -18,15 +19,18 @@ import com.jcortez.musiceartrainer.rest.chordtrainer.questions.QuestionSelectorI
 // trainer.
 public class ChordEarTrainerServletModule extends AbstractModule
 {
+    private static final String questionsXMLFile = "question_data.xml";
+
     @Override
     protected void configure()
     {
         bind(ChordEarTrainerResource.class);
         bind(CustomMode.class).to(CustomModeImpl.class);
         bind(ChallengeMode.class).to(ChallengeModeImpl.class);
-        bind(ChordFileStore.class).to(DummyChordFileStore.class);
+        bind(ChordFileStore.class).to(XMLChordFileStore.class);
         bind(ChordTrainerRandomNumberGenerator.class).to(ChordTrainerRandomNumberGeneratorImpl.class);
         bind(UserSelectableChordCharacteristics.class).to(UserSelectableChordCharacteristicsImpl.class);
         bind(QuestionSelector.class).to(QuestionSelectorImpl.class);
+        bindConstant().annotatedWith(QuestionXMLFile.class).to(questionsXMLFile);
     }
 }

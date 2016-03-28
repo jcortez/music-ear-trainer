@@ -1,0 +1,4035 @@
+<?xml version="1.0"?>
+<questions>
+  <question>
+    <questionMidiFileName>0.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>1.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>2.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>3.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>4.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>5.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>6.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>7.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>8.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>9.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>10.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>11.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>12.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>13.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>14.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>15.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>16.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>17.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>18.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>19.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>20.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>21.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>22.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>23.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>24.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>25.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>26.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>27.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>28.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>29.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>30.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>31.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>32.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>33.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>34.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>35.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>36.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>37.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>38.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>39.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>40.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>41.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>42.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>43.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>44.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>45.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>46.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>47.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>48.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>49.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>50.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>51.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>52.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>53.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>54.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>55.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>56.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>57.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>58.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>59.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>60.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>61.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>62.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>63.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>64.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>65.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>66.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>67.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>68.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>69.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>70.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>71.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>72.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>73.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>74.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>75.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>76.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>77.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>78.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>79.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>80.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>81.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>82.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>83.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>C#/Db</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>84.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>85.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>86.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>87.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>88.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>89.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>90.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>91.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>92.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>93.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>94.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>95.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>96.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>97.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>98.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>99.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>100.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>101.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>102.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>103.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>104.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>105.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>106.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>107.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>108.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>109.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>110.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>111.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>112.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>113.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>114.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>115.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>116.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>117.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>118.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>119.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>120.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>121.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>122.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>123.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>124.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>125.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>126.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>127.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>128.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>129.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>130.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>131.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>132.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>133.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>134.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>135.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>136.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>137.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>138.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>139.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>140.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>141.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>142.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>143.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>144.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>145.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>146.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>147.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>148.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>149.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>150.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>151.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>152.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>153.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>154.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>155.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>156.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>157.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>158.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>159.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>160.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>161.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>162.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>163.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>164.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>165.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>166.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>167.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>D#/Eb</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>168.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>169.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>170.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>171.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>172.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>173.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>174.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>175.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>176.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>177.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>178.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>179.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>180.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>181.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>182.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>183.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>184.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>185.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>186.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>187.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>188.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>189.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>190.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>191.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>192.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>193.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>194.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>195.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>196.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>197.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>198.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>199.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>200.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>201.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>202.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>203.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>204.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>205.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>206.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>207.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>208.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>209.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>E</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>210.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>211.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>212.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>213.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>214.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>215.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>216.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>217.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>218.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>219.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>220.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>221.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>222.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>223.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>224.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>225.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>226.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>227.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>228.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>229.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>230.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>231.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>232.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>233.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>234.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>235.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>236.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>237.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>238.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>239.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>240.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>241.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>242.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>243.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>244.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>245.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>246.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>247.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>248.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>249.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>250.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>251.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>252.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>253.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>254.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>255.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>256.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>257.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>258.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>259.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>260.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>261.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>262.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>263.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>264.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>265.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>266.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>267.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>268.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>269.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>270.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>271.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>272.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>273.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>274.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>275.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>276.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>277.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>278.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>279.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>280.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>281.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>282.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>283.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>284.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>285.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>286.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>287.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>288.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>289.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>290.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>291.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>292.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>293.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>F#/Gb</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>294.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>295.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>296.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>297.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>298.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>299.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>300.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>301.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>302.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>303.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>304.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>305.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>306.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>307.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>308.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>309.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>310.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>311.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>312.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>313.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>314.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>315.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>316.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>317.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>318.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>319.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>320.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>321.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>322.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>323.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>324.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>325.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>326.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>327.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>328.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>329.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>330.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>331.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>332.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>333.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>334.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>335.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>336.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>337.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>338.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>339.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>340.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>341.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>342.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>343.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>344.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>345.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>346.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>347.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>348.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>349.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>350.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>351.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>352.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>353.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>354.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>355.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>356.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>357.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>358.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>359.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>360.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>361.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>362.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>363.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>364.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>365.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>366.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>367.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>368.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>369.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>370.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>371.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>372.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>373.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>374.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>375.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>376.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>377.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>G#/Ab</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>378.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>379.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>380.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>381.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>382.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>383.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>384.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>385.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>386.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>387.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>388.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>389.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>390.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>391.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>392.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>393.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>394.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>395.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>396.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>397.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>398.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>399.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>400.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>401.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>402.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>403.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>404.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>405.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>406.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>407.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>408.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>409.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>410.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>411.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>412.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>413.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>414.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>415.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>416.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>417.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>418.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>419.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>420.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>421.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>422.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>423.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>424.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>425.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>426.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>427.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>428.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>429.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>430.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>431.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>432.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>433.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>434.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>435.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>436.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>437.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>438.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>439.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>440.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>441.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>442.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>443.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>444.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>445.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>446.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>447.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>448.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>449.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>450.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>451.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>452.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>453.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>454.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>455.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>456.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>457.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>458.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>459.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>460.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>461.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>A#/Bb</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>462.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>463.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>464.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Major</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>465.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>466.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>467.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Minor</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>468.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>469.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>470.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Diminished</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>471.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>472.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>473.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Augmented</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>474.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>475.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>476.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>477.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Dominant Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>478.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>479.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>480.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>481.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Major Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>482.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>483.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>484.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>485.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Minor Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>486.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>487.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>488.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>489.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Minor Major Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>490.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>491.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>492.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>493.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Half Diminished Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>494.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>495.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>496.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>497.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Diminished Seventh</chordQuality>
+      <chordInversion>Third Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>498.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>499.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>500.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Sus 2</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>501.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>Root Position</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>502.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>First Inversion</chordInversion>
+    </answer>
+  </question>
+  <question>
+    <questionMidiFileName>503.mid</questionMidiFileName>
+    <answer>
+      <chordRoot>B/Cb</chordRoot>
+      <chordQuality>Sus 4</chordQuality>
+      <chordInversion>Second Inversion</chordInversion>
+    </answer>
+  </question>
+</questions>
