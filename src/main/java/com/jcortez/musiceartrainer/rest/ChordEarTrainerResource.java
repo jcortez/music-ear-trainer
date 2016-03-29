@@ -2,6 +2,7 @@ package com.jcortez.musiceartrainer.rest;
 
 import java.util.ArrayList;
 import javax.ws.rs.BeanParam;
+import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
@@ -108,9 +109,10 @@ public class ChordEarTrainerResource
 
     @POST
     @Path("/modes/custom/answer")
+    @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     // Submits the user's answer for Custom Mode with the chord characteristics that
-    // were specified by the user.
+    // were specified by the user. The correct answer is returned in the response.
     public AnswerResponse submitCustomModeAnswer(Answer userAnswer)
     {
         if (userAnswer == null)

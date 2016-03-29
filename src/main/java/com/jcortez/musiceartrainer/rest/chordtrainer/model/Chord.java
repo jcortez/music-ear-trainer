@@ -4,6 +4,7 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
 
 // A data structure corresponding to a chord in the chord ear trainer. A Chord
 // object will contain all chord characteristics.
@@ -26,6 +27,7 @@ public class Chord
 
     // Returns the ChordRoot enum value that corresponds to the root of this Chord
     // object.
+    @XmlTransient
     public ChordRoot getChordRoot()
     {
         return chordRoot;
@@ -33,6 +35,7 @@ public class Chord
 
     // Returns the ChordQuality enum value that corresponds to the chord quality of
     // this chord object.
+    @XmlTransient
     public ChordQuality getChordQuality()
     {
         return chordQuality;
@@ -40,9 +43,46 @@ public class Chord
 
     // Returns the ChordInversion enum value that corresponds to the chord inversion
     // of this chord. If the value is ROOT_POS, then this chord is not inverted.
+    @XmlTransient
     public ChordInversion getChordInversion()
     {
         return chordInversion;
+    }
+
+    // Returns the chord root as its full name.
+    @XmlElement(name="chordRoot")
+    public String getChordRootString()
+    {
+        if (chordRoot == null)
+        {
+            return "";
+        }
+
+        return ChordRoot.getFullChordRootName(chordRoot);
+    }
+
+    // Returns the chord quality as its full name.
+    @XmlElement(name="chordQuality")
+    public String getChordQualityString()
+    {
+        if (chordQuality == null)
+        {
+            return "";
+        }
+
+        return ChordQuality.getFullChordQualityName(chordQuality);
+    }
+
+    // Returns the chord inversion as its full name.
+    @XmlElement(name="chordInversion")
+    public String getChordInversionString()
+    {
+        if (chordInversion == null)
+        {
+            return "";
+        }
+
+        return ChordInversion.getFullChordInversionName(chordInversion);
     }
 
     // Sets the chord root using the full chord root name.
