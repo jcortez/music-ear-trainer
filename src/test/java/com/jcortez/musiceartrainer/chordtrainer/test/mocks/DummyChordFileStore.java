@@ -1,6 +1,11 @@
-package com.jcortez.musiceartrainer.rest.chordtrainer.model;
+package com.jcortez.musiceartrainer.chordtrainer.test.mocks;
 
 import com.google.inject.Singleton;
+import com.jcortez.musiceartrainer.rest.chordtrainer.model.Chord;
+import com.jcortez.musiceartrainer.rest.chordtrainer.model.ChordFileStore;
+import com.jcortez.musiceartrainer.rest.chordtrainer.model.ChordInversion;
+import com.jcortez.musiceartrainer.rest.chordtrainer.model.ChordQuality;
+import com.jcortez.musiceartrainer.rest.chordtrainer.model.ChordRoot;
 
 // A dummy class (stub) to store the MIDI file name mappings. See ChordFileStore
 // for more details.

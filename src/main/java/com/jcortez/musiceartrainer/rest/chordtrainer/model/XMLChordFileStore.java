@@ -50,12 +50,9 @@ public class XMLChordFileStore implements ChordFileStore
     {
         XPath xpath = XPathFactory.newInstance().newXPath();
         String expression = "/questions/question[answer/chordRoot/text()='" +
-                ChordRoot.getFullChordRootName(chord.getChordRoot()) +
-                "' and answer/chordQuality/text()='" +
-                ChordQuality.getFullChordQualityName(chord.getChordQuality()) +
-                "' and answer/chordInversion/text()='" +
-                ChordInversion.getFullChordInversionName(chord.getChordInversion()) +
-                "']/questionMidiFileName";
+                chord.getChordRootString() + "' and answer/chordQuality/text()='" +
+                chord.getChordQualityString() + "' and answer/chordInversion/text()='" +
+                chord.getChordInversionString() + "']/questionMidiFileName";
         try
         {
             String fileName = (String) xpath.evaluate(expression, questionsData, XPathConstants.STRING);
