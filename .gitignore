@@ -20,3 +20,5 @@ hs_err_pid*
 # AngularJS 2 stuff
 node_modules/
 typings/
+app/*.js
+app/*.js.map
