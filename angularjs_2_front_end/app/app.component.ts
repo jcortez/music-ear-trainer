@@ -1,8 +1,20 @@
-import { Component } from '@angular/core'
+import {Component} from '@angular/core';
+import {TrainerModeComponent} from './trainer-mode.component';
 
 @Component({
-    selector: 'my-app',
-    template: '<h1>Hello, World!</h1>'
-  })
+    selector: 'music-ear-trainer',
+    directives: [TrainerModeComponent],
+    templateUrl: 'app/app.component.html'
+})
+export class AppComponent {
+  customMode = {
+    name: "Custom Mode"
+  };
+  challengeMode = {
+    name: "Challenge Mode"
+  };
 
-export class AppComponent {}
+  onTrainerModeSelected(trainerMode) {
+    console.log(trainerMode.name + " selected");
+  }
+}

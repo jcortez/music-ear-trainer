@@ -1,0 +1,8 @@
+.mode {
+  list-style-type: none;
+  width: 10em;
+  cursor: pointer;
+  border-radius: 2em;
+  background-color: #FFC125;
+  text-align: center;
+}
