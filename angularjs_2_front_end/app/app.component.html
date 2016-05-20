@@ -1,4 +1,3 @@
 <h1>Music Ear Trainer</h1>
 <h2>Select a mode</h2>
-<trainer-mode [trainerMode]="customMode" (selected)="onTrainerModeSelected($event)"></trainer-mode>
-<trainer-mode [trainerMode]="challengeMode" (selected)="onTrainerModeSelected($event)"></trainer-mode>
+<trainer-mode *ngFor="let mode of trainerModes" [trainerMode]="mode" (selected)="onTrainerModeSelected($event)"></trainer-mode>
