@@ -1,4 +1,5 @@
 - Grunt production build for AngularJS 2 front-end that uses grunt-contrib-uglify
+- Investigate how to configure grunt-connect-proxy to use local Java backend with AngularJS 2 front-end
 - Integrate Grunt with Maven build using grunt-maven-plugin and package front-end in WAR
 - Add logging
 - Disable HTTP caching for getting new questions web services

@@ -1,1 +1,1 @@
-<h3 (click)="onSelect()" class="mode">{{trainerMode.name}}</h3>
+<h3 *ngFor="let mode of trainerModes" (click)="onTrainerModeSelected(mode)" class="mode">{{mode.name}}</h3>

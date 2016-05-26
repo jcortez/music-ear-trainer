@@ -1,15 +1,25 @@
-import {Component, Input, Output, EventEmitter} from '@angular/core'
+import { Component, EventEmitter } from '@angular/core'
+import { TrainerModeService } from './trainer-mode.service';
 
 @Component({
-    selector: 'trainer-mode',
-    templateUrl: 'app/trainer-mode.component.html',
-    styleUrls: ['app/trainer-mode.component.css']
+    selector: 'trainer-modes',
+    templateUrl: 'app/trainer-modes.component.html',
+    styleUrls: ['app/trainer-modes.component.css'],
+    providers: [TrainerModeService]
 })
-export class TrainerModeComponent {
-  @Input() trainerMode;
-  @Output('selected') select = new EventEmitter();
+// Represents the trainer modes for the music ear trainer.
+export class TrainerModesComponent {
+  public trainerModes;
 
-  onSelect() {
-    this.select.emit(this.trainerMode);
+  constructor(private trainerModeService : TrainerModeService){}
+
+  ngOnInit() {
+    this.trainerModeService.getTrainerModes()
+    .then(modes => this.trainerModes = modes)
+    .catch(error => window.alert(error));
+  }
+
+  onTrainerModeSelected(trainerMode) {
+    console.log(trainerMode.name + " selected");
   }
 }
