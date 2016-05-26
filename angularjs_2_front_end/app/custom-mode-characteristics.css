@@ -1,4 +1,5 @@
-.mode li {
+.characteristics li {
+  display: inline-block;
   list-style-type: none;
   width: 10em;
   margin: 1em;
@@ -8,6 +9,6 @@
   text-align: center;
 }
 
-.mode li:hover {
+.characteristics li:hover {
   background-color: grey;
 }

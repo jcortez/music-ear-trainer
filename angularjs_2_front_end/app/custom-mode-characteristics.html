@@ -1,0 +1,10 @@
+<div class="characteristics">
+  <h2>Chord Qualities</h2>
+  <ul>
+    <li *ngFor="let quality of chordQualities" (click)="onChordQualitySelected(quality)">{{quality}}</li>
+  </ul>
+  <h2>Chord Inversions</h2>
+  <ul>
+    <li *ngFor="let inversion of chordInversions" (click)="onChordInversionSelected(inversion)">{{inversion}}</li>
+  </ul>
+</div>
