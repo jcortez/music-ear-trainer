@@ -1,0 +1,20 @@
+<div>
+  <button id=playAgainButton (click)="onPlayAgainButtonClicked()">Play Chord Again</button>
+</div>
+<div class="characteristics">
+  <h3>Chord Root</h3>
+  <ul>
+    <li *ngFor="let root of TESTER_CHORD_ROOTS" (click)="onChordRootSelected(root)">{{root}}</li>
+  </ul>
+  <h3>Chord Qualities</h3>
+  <ul>
+    <li *ngFor="let quality of testerChordQualities" (click)="onChordQualitySelected(quality)">{{quality}}</li>
+  </ul>
+  <h3>Chord Inversions</h3>
+  <ul>
+    <li *ngFor="let inversion of testerChordInversions" (click)="onChordInversionSelected(inversion)">{{inversion}}</li>
+  </ul>
+</div>
+<div>
+  <button id="submitButton" (click)="onSubmitButtonClicked()">Submit</button>
+</div>
