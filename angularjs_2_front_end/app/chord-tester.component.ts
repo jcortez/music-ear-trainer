@@ -24,8 +24,6 @@ export class ChordTester {
   // these in GUI.
   public testerChordQualities = CHORD_QUALITIES;
   public testerChordInversions = CHORD_INVERSIONS;
-  // The current MIDI file that the user is being tested on.
-  public currentQuestionMIDIFile: string = "";
   // The user's answer made up of the selected chord characteristics.
   private currentAnswer: Answer;
 
@@ -72,14 +70,13 @@ export class ChordTester {
     // Resetting the current answer.
     this.currentAnswer = new Answer();
     this.questionService.getQuestionCustomMode(this.testerChordQualities,
-    this.testerChordInversions).then(midiFile => this.currentQuestionMIDIFile
+    this.testerChordInversions).then(midiFile => this.currentAnswer.midiFileName
     = midiFile).catch(error => window.alert(error));
-    this.currentAnswer.midiFileName = this.currentQuestionMIDIFile;
   }
 
   // Plays the MIDI file in the web browser for the question.
   private playQuestionMIDIFile() {
-    console.log("Playing MIDI file: " + this.currentQuestionMIDIFile);
+    console.log("Playing MIDI file: " + this.currentAnswer.midiFileName);
   }
 
   // Processes the question answer response from the server and reports if the
