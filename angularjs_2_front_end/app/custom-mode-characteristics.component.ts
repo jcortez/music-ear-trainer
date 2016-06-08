@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CustomModeCharacteristicsService } from './custom-mode-characteristics.service';
 import { ChordCharacteristics } from './chord-characteristics';
+import { Router } from '@angular/router-deprecated';
 
 @Component({
     selector: 'custom-mode-characteristics',
@@ -11,14 +12,12 @@ import { ChordCharacteristics } from './chord-characteristics';
 // The view for selecting chord characteristics that will be tested in custom
 // mode.
 export class CustomModeCharacteristics {
-  private selectedChordQualities: Map<string, boolean>;
-  private selectedChordInversions: Map<string, boolean>;
-  private allChordCharacteristics: ChordCharacteristics;
+  private selectedChordQualities: Map<string, boolean> = new Map<string, boolean>();
+  private selectedChordInversions: Map<string, boolean> = new Map<string, boolean>();
+  private allChordCharacteristics: ChordCharacteristics = new ChordCharacteristics();
 
-  constructor(private customModeCharacteristicsService : CustomModeCharacteristicsService) {
-    this.allChordCharacteristics = new ChordCharacteristics();
-    this.selectedChordQualities = new Map<string, boolean>();
-  }
+  constructor(private customModeCharacteristicsService: CustomModeCharacteristicsService,
+    private router : Router) {}
 
   ngOnInit() {
     this.customModeCharacteristicsService.getCustomModeChordCharacteristics()
@@ -53,7 +52,6 @@ export class CustomModeCharacteristics {
     else {
       this.selectedChordQualities.set(quality, !isSet);
     }
-    console.log(quality + " quality selected: " + this.selectedChordQualities.get(quality));
   }
 
   onChordInversionSelected(inversion: string) {
@@ -67,10 +65,35 @@ export class CustomModeCharacteristics {
     else {
       this.selectedChordInversions.set(inversion, !isSet);
     }
-    console.log(inversion + " quality selected: " + this.selectedChordInversions.get(inversion));
   }
 
   onStartTrainerButtonSelected() {
-    console.log("Starting trainer");
+    // Building an array of selected chord qualities. If none were selected,
+    // then all are available to be tested on and they are added to the array.
+    let chordQualities = [];
+    this.selectedChordQualities.forEach(function(value, key, map){
+      if (value === true) {
+        chordQualities.push(key);
+      }
+    });
+    if (chordQualities.length === 0) {
+      chordQualities = this.allChordCharacteristics.chordQualities;
+    }
+
+    // Building an array of selected chord inversions. If none were selected,
+    // then all are available to be tested on and they are added to the array.
+    let chordInversions = [];
+    this.selectedChordInversions.forEach(function(value, key, map){
+      if (value === true) {
+        chordInversions.push(key);
+      }
+    });
+    if (chordInversions.length === 0) {
+      chordInversions = this.allChordCharacteristics.chordInversions;
+    }
+
+    let chordCharacteristics = new ChordCharacteristics(chordQualities, chordInversions);
+    this.router.navigate(['ChordTester', chordCharacteristics]);
   }
+
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TrainerModeService } from './trainer-mode.service';
+import { ROUTER_DIRECTIVES, ROUTER_PROVIDERS, RouteConfig, Router } from '@angular/router-deprecated';
 
 @Component({
     selector: 'trainer-modes',
@@ -11,7 +12,8 @@ import { TrainerModeService } from './trainer-mode.service';
 export class TrainerModesComponent {
   public trainerModes;
 
-  constructor(private trainerModeService : TrainerModeService){}
+  constructor(private trainerModeService: TrainerModeService,
+    private router: Router){}
 
   ngOnInit() {
     this.trainerModeService.getTrainerModes()
@@ -19,7 +21,14 @@ export class TrainerModesComponent {
     .catch(error => window.alert(error));
   }
 
+  // Goes to the trainer mode that was selected.
   onTrainerModeSelected(trainerMode) {
-    console.log(trainerMode.name + " selected");
+    // Right now, only Custom Mode is implemented.
+    if (trainerMode.name === "Challenge Mode") {
+      window.alert("Challenge Mode is not implemented yet");
+      return;
+    }
+
+    this.router.navigate(['CustomMode']);
   }
 }

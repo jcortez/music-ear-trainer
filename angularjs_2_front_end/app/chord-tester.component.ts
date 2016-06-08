@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { CHORD_QUALITIES, CHORD_INVERSIONS } from './mock-custom-mode-characteristics';
 import { QuestionService } from './question.service';
 import { Chord } from './chord';
 import { Answer } from './answer';
 import { AnswerResponse } from './answer-response';
+import { RouteParams } from '@angular/router-deprecated';
 
 @Component({
   selector: 'chord-tester',
@@ -20,16 +20,28 @@ export class ChordTester {
   // All possible chord roots that can be selected for the chord.
   public TESTER_CHORD_ROOTS = [ "C", "C#/Db", "D", "D#/Eb", "E", "F", "F#/Gb",
   "G", "G#/Ab", "A", "A#/Bb", "B/Cb" ];
-  // TODO: Keep track of characteristics selected for custom mode and only show
-  // these in GUI.
-  public testerChordQualities = CHORD_QUALITIES;
-  public testerChordInversions = CHORD_INVERSIONS;
+  public testerChordQualities;
+  public testerChordInversions;
   // The user's answer made up of the selected chord characteristics.
   private currentAnswer: Answer;
 
-  constructor(private questionService: QuestionService) { }
+  constructor(private questionService: QuestionService, private routeParams:
+    RouteParams) { }
 
   ngOnInit() {
+    let routerChordQualities = this.routeParams.get('chordQualities');
+    let routerChordInversions = this.routeParams.get('chordInversions');
+    // Checking to make sure router parameters exist.
+    if (routerChordQualities === "" || routerChordQualities === null ||
+      Object.keys(routerChordQualities).length === 0 ||
+      routerChordInversions === "" || routerChordInversions === null ||
+      Object.keys(routerChordInversions).length === 0) {
+      window.alert("Error: Please start the Music Ear Trainer again.");
+      return;
+    }
+
+    this.testerChordQualities = routerChordQualities;
+    this.testerChordInversions = routerChordInversions;
     this.getNextQuestion();
     this.playQuestionMIDIFile();
   }
