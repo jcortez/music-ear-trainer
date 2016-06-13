@@ -1,4 +1,4 @@
-export var MODES = [
-  { name: "Custom Mode" },
-  { name: "Challenge Mode" }
-];
+import { TrainerMode } from './trainer-mode-object';
+
+export var MODES: TrainerMode[] = [ new TrainerMode("Custom Mode"),
+  new TrainerMode("Challenge Mode") ];

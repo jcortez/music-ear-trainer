@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { TrainerModeService } from './trainer-mode.service';
 import { ROUTER_DIRECTIVES, ROUTER_PROVIDERS, RouteConfig, Router } from '@angular/router-deprecated';
+import { TrainerMode } from './trainer-mode-object';
 
 @Component({
     selector: 'trainer-modes',
@@ -10,7 +11,7 @@ import { ROUTER_DIRECTIVES, ROUTER_PROVIDERS, RouteConfig, Router } from '@angul
 })
 // Represents the trainer modes for the music ear trainer.
 export class TrainerModesComponent {
-  public trainerModes;
+  public trainerModes: TrainerMode[];
 
   constructor(private trainerModeService: TrainerModeService,
     private router: Router){}
