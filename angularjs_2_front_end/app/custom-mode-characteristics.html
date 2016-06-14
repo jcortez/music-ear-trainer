@@ -1,11 +1,11 @@
 <div class="characteristics">
   <h2>Chord Qualities</h2>
   <ul>
-    <li *ngFor="let quality of allChordCharacteristics.chordQualities" (click)="onChordQualitySelected(quality)">{{quality}}</li>
+    <li *ngFor="let quality of allChordCharacteristics.trainerChordQualities" (click)="onChordQualitySelected(quality)">{{quality}}</li>
   </ul>
   <h2>Chord Inversions</h2>
   <ul>
-    <li *ngFor="let inversion of allChordCharacteristics.chordInversions" (click)="onChordInversionSelected(inversion)">{{inversion}}</li>
+    <li *ngFor="let inversion of allChordCharacteristics.trainerChordInversions" (click)="onChordInversionSelected(inversion)">{{inversion}}</li>
   </ul>
 </div>
 <div>

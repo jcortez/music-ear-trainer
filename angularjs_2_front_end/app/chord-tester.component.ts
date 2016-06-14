@@ -29,8 +29,8 @@ export class ChordTester {
     RouteParams) { }
 
   ngOnInit() {
-    let routerChordQualities = this.routeParams.get('chordQualities');
-    let routerChordInversions = this.routeParams.get('chordInversions');
+    let routerChordQualities = this.routeParams.get('trainerChordQualities');
+    let routerChordInversions = this.routeParams.get('trainerChordInversions');
     // Checking to make sure router parameters exist.
     if (routerChordQualities === "" || routerChordQualities === null ||
       Object.keys(routerChordQualities).length === 0 ||
@@ -47,18 +47,15 @@ export class ChordTester {
   }
 
   onChordRootSelected(root) {
-    this.currentAnswer.chosenChord.chordRoot = root;
-    console.log(root + " root selected");
+    this.currentAnswer.answer.chordRoot = root;
   }
 
   onChordQualitySelected(quality) {
-    this.currentAnswer.chosenChord.chordQuality = quality;
-    console.log(quality + " quality selected");
+    this.currentAnswer.answer.chordQuality = quality;
   }
 
   onChordInversionSelected(inversion) {
-    this.currentAnswer.chosenChord.chordInversion = inversion;
-    console.log(inversion + " inversion selected");
+    this.currentAnswer.answer.chordInversion = inversion;
   }
 
   onPlayAgainButtonClicked() {
@@ -82,19 +79,19 @@ export class ChordTester {
     // Resetting the current answer.
     this.currentAnswer = new Answer();
     this.questionService.getQuestionCustomMode(this.testerChordQualities,
-    this.testerChordInversions).then(midiFile => this.currentAnswer.midiFileName
-    = midiFile).catch(error => window.alert(error));
+    this.testerChordInversions).then(question => this.currentAnswer.questionMidiFileName
+    = question.questionMidiFileName).catch(error => window.alert(error));
   }
 
   // Plays the MIDI file in the web browser for the question.
   private playQuestionMIDIFile() {
-    console.log("Playing MIDI file: " + this.currentAnswer.midiFileName);
+    console.log("Playing MIDI file: " + this.currentAnswer.questionMidiFileName);
   }
 
   // Processes the question answer response from the server and reports if the
   // user's answer was correct or not.
   private processAnswerResponse(answerResponse : AnswerResponse) {
-    if (answerResponse.userAnswerIsCorrect) {
+    if (answerResponse.userAnswerCorrect) {
       window.alert("Your answer was correct!");
     }
     else {
@@ -114,9 +111,9 @@ export class ChordTester {
 
   // Checks that all chord characteristics have been selected in the GUI.
   private allChordCharacteristicsSelected() : boolean {
-    if (this.currentAnswer.chosenChord.chordRoot === "" ||
-        this.currentAnswer.chosenChord.chordQuality === "" ||
-        this.currentAnswer.chosenChord.chordInversion === "") {
+    if (this.currentAnswer.answer.chordRoot === "" ||
+        this.currentAnswer.answer.chordQuality === "" ||
+        this.currentAnswer.answer.chordInversion === "") {
       return false;
     }
     else {

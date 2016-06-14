@@ -11,7 +11,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class AnswerResponse
 {
-    // Will be set to true if the user's is correct, false if the user is incorrect.
+    // Will be set to true if the user's answer is correct, false if the user is incorrect.
     private boolean userAnswerCorrect = false;
     // The correct answer for the question that was presented to the user.
     private Chord correctAnswer = null;

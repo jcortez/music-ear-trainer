@@ -4,12 +4,12 @@ import { Chord } from './chord';
 export class Answer {
   // The file name of the MIDI file that was played to the user for the
   // question that this answer corresponds to.
-  midiFileName: string;
+  questionMidiFileName: string;
   // The chord with the characteristics that the user has selected in the GUI.
-  chosenChord: Chord;
+  answer: Chord;
 
   constructor() {
-    this.midiFileName = "";
-    this.chosenChord = new Chord();
+    this.questionMidiFileName = "";
+    this.answer = new Chord();
   }
 }

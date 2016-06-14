@@ -33,10 +33,10 @@ export class CustomModeCharacteristics {
     // characteristics.
     this.selectedChordQualities = new Map<string, boolean>();
     this.selectedChordInversions = new Map<string, boolean>();
-    for (let q of this.allChordCharacteristics.chordQualities) {
+    for (let q of this.allChordCharacteristics.trainerChordQualities) {
       this.selectedChordQualities.set(q, false);
     }
-    for (let i of this.allChordCharacteristics.chordInversions) {
+    for (let i of this.allChordCharacteristics.trainerChordInversions) {
       this.selectedChordInversions.set(i, false);
     }
   }
@@ -77,7 +77,7 @@ export class CustomModeCharacteristics {
       }
     });
     if (chordQualities.length === 0) {
-      chordQualities = this.allChordCharacteristics.chordQualities;
+      chordQualities = this.allChordCharacteristics.trainerChordQualities;
     }
 
     // Building an array of selected chord inversions. If none were selected,
@@ -89,7 +89,7 @@ export class CustomModeCharacteristics {
       }
     });
     if (chordInversions.length === 0) {
-      chordInversions = this.allChordCharacteristics.chordInversions;
+      chordInversions = this.allChordCharacteristics.trainerChordInversions;
     }
 
     let chordCharacteristics = new ChordCharacteristics(chordQualities, chordInversions);
