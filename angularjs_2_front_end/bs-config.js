@@ -3,7 +3,7 @@
 var proxy = require('http-proxy-middleware');
 var fallbackMiddleware = require('connect-history-api-fallback');
 
-var devRESTProxy = proxy('/rest', {
+var devRESTProxy = proxy(['/rest/', '/midi/'], {
     target: 'http://localhost:8080/musiceartrainer',
     changeOrigin: true
 });

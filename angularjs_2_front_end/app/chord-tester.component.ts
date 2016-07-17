@@ -4,6 +4,7 @@ import { Chord } from './chord';
 import { Answer } from './answer';
 import { AnswerResponse } from './answer-response';
 import { RouteParams } from '@angular/router-deprecated';
+declare var MIDI: any;
 
 @Component({
   selector: 'chord-tester',
@@ -42,8 +43,7 @@ export class ChordTester {
 
     this.testerChordQualities = routerChordQualities;
     this.testerChordInversions = routerChordInversions;
-    this.getNextQuestion();
-    this.playQuestionMIDIFile();
+    this.getNextQuestion().then(output => this.playQuestionMIDIFile());
   }
 
   onChordRootSelected(root) {
@@ -70,22 +70,31 @@ export class ChordTester {
       return;
     }
     this.checkUserAnswer();
-    this.getNextQuestion();
-    this.playQuestionMIDIFile();
+    this.getNextQuestion().then(output => this.playQuestionMIDIFile());
   }
 
   // Gets the next question from the server.
-  private getNextQuestion() {
+  private getNextQuestion() : Promise<string> {
     // Resetting the current answer.
     this.currentAnswer = new Answer();
-    this.questionService.getQuestionCustomMode(this.testerChordQualities,
+    return this.questionService.getQuestionCustomMode(this.testerChordQualities,
     this.testerChordInversions).then(question => this.currentAnswer.questionMidiFileName
     = question.questionMidiFileName).catch(error => window.alert(error));
   }
 
   // Plays the MIDI file in the web browser for the question.
   private playQuestionMIDIFile() {
-    console.log("Playing MIDI file: " + this.currentAnswer.questionMidiFileName);
+    let midiFile = this.currentAnswer.questionMidiFileName;
+    if (midiFile === "" || midiFile === undefined) {
+      window.alert("ERROR: Could not load MIDI file.");
+      return;
+    }
+
+    MIDI.loadPlugin({ soundfontUrl: "midijs/soundfont/",
+      onsuccess: function() {
+          MIDI.Player.loadFile("midi/" + midiFile, MIDI.Player.start);
+      }
+    });
   }
 
   // Processes the question answer response from the server and reports if the
