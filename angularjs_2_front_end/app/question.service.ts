@@ -3,7 +3,7 @@ import { Answer } from './answer';
 import { AnswerResponse } from './answer-response';
 import { Chord } from './chord';
 import { Question } from './question-object';
-import { Headers, Http } from '@angular/http';
+import { Headers, Http, URLSearchParams } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 
 @Injectable()
@@ -12,8 +12,12 @@ export class QuestionService {
   constructor(private http: Http) {}
 
   getQuestionCustomMode(chordQualities: string[], chordInversions: string[]) : Promise<Question> {
+    let queryParameters = new URLSearchParams();
+    chordQualities.forEach(quality => queryParameters.append('chordQualities', quality));
+    chordInversions.forEach(inversion => queryParameters.append('chordInversions', inversion));
     return this.http.get("rest/chord-ear-trainer/modes/custom/question",
-        { headers: new Headers({'Content-Type': 'application/json'})})
+        { headers: new Headers({'Content-Type': 'application/json'}),
+          search: queryParameters })
       .toPromise().then(response => response.json())
       .catch(function(error) {
         return Promise.reject(error.message || error)
