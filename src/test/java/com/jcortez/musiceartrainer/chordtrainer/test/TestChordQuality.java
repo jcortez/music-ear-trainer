@@ -24,5 +24,34 @@ public class TestChordQuality
         ChordQuality quality = ChordQuality.getChordQualityEnum("Test");
         assertNull(quality);
     }
-    
+
+    @Test
+    // Tests the hasThirdInversion() method with qualities that have third inversions.
+    public void testHasThirdInversionWithValidQualities()
+    {
+        ChordQuality[] qualitiesWithThirdInv = new ChordQuality[] {
+            ChordQuality.DOM_SEVENTH, ChordQuality.MAJ_SEVENTH,
+            ChordQuality.MIN_SEVENTH, ChordQuality.MIN_MAJ_SEVENTH,
+            ChordQuality.HALF_DIM_SEVENTH, ChordQuality.DIM_SEVENTH };
+
+        for (ChordQuality q : qualitiesWithThirdInv)
+        {
+            assertTrue(ChordQuality.hasThirdInversion(q));
+        }
+    }
+
+    @Test
+    // Tests the hasThirdInversion() method with qualities that do not have third
+    // inversions.
+    public void testHasThirdInversionWithInvalidQualities()
+    {
+        ChordQuality[] qualitiesWithNoThirdInv = new ChordQuality[] {
+            ChordQuality.MAJ, ChordQuality.MIN, ChordQuality.DIM,
+            ChordQuality.AUG, ChordQuality.SUS_2, ChordQuality.SUS_4 };
+
+        for (ChordQuality q : qualitiesWithNoThirdInv)
+        {
+            assertFalse(ChordQuality.hasThirdInversion(q));
+        }
+    }
 }

@@ -79,7 +79,7 @@ export class ChordTester {
     this.currentAnswer = new Answer();
     return this.questionService.getQuestionCustomMode(this.testerChordQualities,
     this.testerChordInversions).then(question => this.currentAnswer.questionMidiFileName
-    = question.questionMidiFileName).catch(error => window.alert(error));
+    = question.questionMidiFileName).catch(error => window.alert(error._body));
   }
 
   // Plays the MIDI file in the web browser for the question.
@@ -115,7 +115,7 @@ export class ChordTester {
   private checkUserAnswer() {
     this.questionService.checkAnswerCustomMode(this.currentAnswer)
     .then(answerResponse => this.processAnswerResponse(answerResponse))
-    .catch(error => window.alert(error));
+    .catch(error => window.alert(error._body));
   }
 
   // Checks that all chord characteristics have been selected in the GUI.

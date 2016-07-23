@@ -23,6 +23,7 @@ import com.jcortez.musiceartrainer.rest.chordtrainer.model.ChordQuality;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.ChordRoot;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.CustomMode;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.CustomModeImpl;
+import com.jcortez.musiceartrainer.rest.chordtrainer.model.InvalidChordCharacteristicsException;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.Question;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.TrainerMode;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.UserSelectableChordCharacteristics;
@@ -88,6 +89,7 @@ public class TestChordEarTrainerResource
     // Tests going through the full process of obtaining a question from the chord
     // ear trainer and submitting a correct answer.
     public void testGetQuestionAndSubmitCorrectAnswer()
+        throws InvalidChordCharacteristicsException
     {
         ChordCharacteristicsToTest characteristics = new ChordCharacteristicsToTest();
         characteristics.setChordInversions(new String[] {"all"});
@@ -105,6 +107,7 @@ public class TestChordEarTrainerResource
     // Tests going through the full process of obtaining a question from the chord
     // ear trainer and submitting an incorrect answer.
     public void testGetQuestionAndSubmitIncorrectAnswer()
+        throws InvalidChordCharacteristicsException
     {
         ChordCharacteristicsToTest characteristics = new ChordCharacteristicsToTest();
         characteristics.setChordInversions(new String[] {"all"});

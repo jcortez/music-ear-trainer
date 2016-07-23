@@ -19,7 +19,7 @@ export class TrainerModesComponent {
   ngOnInit() {
     this.trainerModeService.getTrainerModes()
     .then(modes => this.trainerModes = modes)
-    .catch(error => window.alert(error));
+    .catch(error => window.alert(error._body));
   }
 
   // Goes to the trainer mode that was selected.

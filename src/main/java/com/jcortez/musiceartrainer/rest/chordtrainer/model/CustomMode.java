@@ -5,5 +5,6 @@ public interface CustomMode extends TrainerMode
 {
     // Returns the next question to present to the user using the chord
     // characteristics that were selected by the user.
-    public Question getNextQuestion(ChordCharacteristicsToTest chordCharacteristics);
+    public Question getNextQuestion(ChordCharacteristicsToTest chordCharacteristics)
+        throws InvalidChordCharacteristicsException;
 }

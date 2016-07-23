@@ -49,4 +49,21 @@ public enum ChordQuality
         Collection<String> qualitiesCollection = fullChordQualityNames.values();
         return qualitiesCollection.toArray(new String[qualitiesCollection.size()]);
     }
+
+    // Returns true if the specified chord quality has a third inversion.
+    public static boolean hasThirdInversion(ChordQuality quality)
+    {
+        if (quality.equals(ChordQuality.MAJ) || quality.equals(ChordQuality.MIN)
+                || quality.equals(ChordQuality.DIM)
+                || quality.equals(ChordQuality.AUG)
+                || quality.equals(ChordQuality.SUS_2)
+                || quality.equals(ChordQuality.SUS_4))
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
 }

@@ -49,6 +49,7 @@ public class CustomModeImpl implements CustomMode
 
     @Override
     public Question getNextQuestion(ChordCharacteristicsToTest chordCharacteristics)
+            throws InvalidChordCharacteristicsException
     {
         if (chordCharacteristics == null)
         {

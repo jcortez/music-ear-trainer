@@ -6,6 +6,7 @@ import com.jcortez.musiceartrainer.rest.chordtrainer.model.ChallengeModeImpl;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.ChordFileStore;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.CustomMode;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.CustomModeImpl;
+import com.jcortez.musiceartrainer.rest.chordtrainer.model.InvalidChordCharacteristicsMapper;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.UserSelectableChordCharacteristics;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.UserSelectableChordCharacteristicsImpl;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.XMLChordFileStore;
@@ -25,6 +26,7 @@ public class ChordEarTrainerServletModule extends AbstractModule
     protected void configure()
     {
         bind(ChordEarTrainerResource.class);
+        bind(InvalidChordCharacteristicsMapper.class);
         bind(CustomMode.class).to(CustomModeImpl.class);
         bind(ChallengeMode.class).to(ChallengeModeImpl.class);
         bind(ChordFileStore.class).to(XMLChordFileStore.class);

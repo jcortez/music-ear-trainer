@@ -23,6 +23,7 @@ import com.jcortez.musiceartrainer.rest.chordtrainer.model.ChordQuality;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.ChordRoot;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.CustomMode;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.CustomModeImpl;
+import com.jcortez.musiceartrainer.rest.chordtrainer.model.InvalidChordCharacteristicsException;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.Question;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.UserSelectableChordCharacteristics;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.UserSelectableChordCharacteristicsImpl;
@@ -98,6 +99,7 @@ public class TestChordEarTrainerCustomMode
     // Tests calling the getNextCustomModeQuestion() method when the chard
     // characteristics are null.
     public void testGetNextCustomModeQuestionNullCharacteristics()
+        throws InvalidChordCharacteristicsException
     {
         Question question = restResource.getNextCustomModeQuestion(null);
         assertNull(question);
@@ -107,6 +109,7 @@ public class TestChordEarTrainerCustomMode
     // Tests calling the getNextCustomModeQuestion() method to return a standard
     // question to the user.
     public void testGetNextCustomModeQuestion()
+        throws InvalidChordCharacteristicsException
     {
         ChordCharacteristicsToTest testCharacteristics = new ChordCharacteristicsToTest();
         testCharacteristics.setChordQualities(new String[] {"all"});

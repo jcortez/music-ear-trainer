@@ -15,6 +15,7 @@ import com.jcortez.musiceartrainer.rest.chordtrainer.model.AnswerResponse;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.ChallengeMode;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.ChordCharacteristicsToTest;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.CustomMode;
+import com.jcortez.musiceartrainer.rest.chordtrainer.model.InvalidChordCharacteristicsException;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.Question;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.TrainerMode;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.UserSelectableChordCharacteristics;
@@ -96,6 +97,7 @@ public class ChordEarTrainerResource
     // appropriate query parameters. If no query parameters are specified, all
     // possible chord characteristics can be tested.
     public Question getNextCustomModeQuestion(@BeanParam ChordCharacteristicsToTest chordCharacteristicsToTest)
+        throws InvalidChordCharacteristicsException
     {
         if (chordCharacteristicsToTest == null)
         {

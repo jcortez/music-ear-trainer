@@ -22,7 +22,7 @@ export class CustomModeCharacteristics {
   ngOnInit() {
     this.customModeCharacteristicsService.getCustomModeChordCharacteristics()
     .then(characteristics => this.initializeChordCharacteristics(characteristics))
-    .catch(error => window.alert(error));
+    .catch(error => window.alert(error._body));
   }
 
   // Initializes the chord characteristics data structures in this class after
