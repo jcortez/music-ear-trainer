@@ -25,11 +25,17 @@ export class ChordTester {
   public testerChordInversions;
   // The user's answer made up of the selected chord characteristics.
   private currentAnswer: Answer;
+  public currentNumberOfCorrectAnswers: number;
+  public currentNumberOfQuestionsAsked: number;
+  public currentScorePercentage: number;
 
   constructor(private questionService: QuestionService, private routeParams:
     RouteParams) { }
 
   ngOnInit() {
+    this.currentNumberOfCorrectAnswers = 0;
+    this.currentNumberOfQuestionsAsked = 0;
+    this.currentScorePercentage = 0;
     let routerChordQualities = this.routeParams.get('trainerChordQualities');
     let routerChordInversions = this.routeParams.get('trainerChordInversions');
     // Checking to make sure router parameters exist.
@@ -98,10 +104,12 @@ export class ChordTester {
   }
 
   // Processes the question answer response from the server and reports if the
-  // user's answer was correct or not.
+  // user's answer was correct or not. The score will also be updated in the
+  // GUI.
   private processAnswerResponse(answerResponse : AnswerResponse) {
     if (answerResponse.userAnswerCorrect) {
       window.alert("Your answer was correct!");
+      this.currentNumberOfCorrectAnswers++;
     }
     else {
       window.alert("Your answer was incorrect! The correct chord was " +
@@ -109,6 +117,9 @@ export class ChordTester {
         answerResponse.correctAnswer.chordQuality + " " +
         answerResponse.correctAnswer.chordInversion);
     }
+    this.currentNumberOfQuestionsAsked++;
+    this.currentScorePercentage = Math.round(this.currentNumberOfCorrectAnswers/
+      this.currentNumberOfQuestionsAsked*100);
   }
 
   // Checks the user's answer by sending it to the server.
