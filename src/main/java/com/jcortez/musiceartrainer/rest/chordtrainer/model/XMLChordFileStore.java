@@ -11,6 +11,8 @@ import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.w3c.dom.Document;
 import com.google.inject.BindingAnnotation;
 import com.google.inject.Inject;
@@ -27,6 +29,7 @@ public class XMLChordFileStore implements ChordFileStore
     @BindingAnnotation
     public @interface QuestionXMLFile {}
 
+    private static final Logger logger = LogManager.getLogger(XMLChordFileStore.class);
     // Questions XML document.
     private Document questionsData = null;
 
@@ -40,8 +43,7 @@ public class XMLChordFileStore implements ChordFileStore
         }
         catch (Exception e)
         {
-            // TODO: Log this
-            System.out.println(e.toString());
+            logger.error(e, e);
         }
     }
 
@@ -60,8 +62,7 @@ public class XMLChordFileStore implements ChordFileStore
         }
         catch (XPathExpressionException e)
         {
-            // TODO: Log this
-            System.out.println(e.toString());
+            logger.error(e, e);
         }
 
         return "";
@@ -87,8 +88,7 @@ public class XMLChordFileStore implements ChordFileStore
         }
         catch (XPathExpressionException e)
         {
-            // TODO: Log this
-            System.out.println(e.toString());
+            logger.error(e, e);
         }
 
         return null;

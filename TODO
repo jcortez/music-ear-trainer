@@ -4,7 +4,6 @@ Front-end:
 - Integrate Grunt with Maven build using grunt-maven-plugin and package front-end in WAR
 
 Back-end:
-- Add logging
 - Disable HTTP caching for getting new questions web services
 - Use HATEOAS to get next/previous trainer states
 - Integrate with Docker
