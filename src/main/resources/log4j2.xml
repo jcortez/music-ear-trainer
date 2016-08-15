@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="INFO">
   <Appenders>
-    <RollingFile name="RollingFile" fileName="logs/musiceartrainer.log">
+    <RollingFile name="RollingFile" fileName="logs/musiceartrainer.log"
+        filePattern="logs/musiceartrainer-%i.log">
       <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
       <Policies>
         <SizeBasedTriggeringPolicy size="5 MB"/>
       </Policies>
-      <DefaultRolloverStrategy max="0"/>
+      <DefaultRolloverStrategy min="1" max="1"/>
     </RollingFile>
   </Appenders>
   <Loggers>
