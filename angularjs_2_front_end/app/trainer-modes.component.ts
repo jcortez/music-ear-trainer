@@ -26,7 +26,7 @@ export class TrainerModesComponent {
   onTrainerModeSelected(trainerMode) {
     // Right now, only Custom Mode is implemented.
     if (trainerMode.name === "Challenge Mode") {
-      window.alert("Challenge Mode is not implemented yet");
+      window.alert("Challenge Mode is not implemented yet. Please select Custom Mode.");
       return;
     }
 

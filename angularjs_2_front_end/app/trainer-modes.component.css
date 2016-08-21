@@ -1,13 +1,13 @@
-.mode li {
-  list-style-type: none;
-  width: 10em;
-  margin: 1em;
-  cursor: pointer;
-  border-radius: 2em;
-  background-color: white;
+#select-mode-header {
   text-align: center;
 }
 
-.mode li:hover {
-  background-color: grey;
+#sound-reminder-text {
+  text-align: center;
+}
+
+.button.mode li {
+  display: list-item;
+  margin-left: auto;
+  margin-right: auto;
 }

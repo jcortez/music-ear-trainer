@@ -1,4 +1,28 @@
-#startTrainerButton {
+#instructions {
+  text-align: center;
+}
+
+#chord-qualities-header {
+  text-align: center;
+  margin: 0em;
+}
+
+#chord-inversions-header {
+  text-align: center;
+  margin: 0em;
+}
+
+ul.button {
+  margin: 1em 10em 2em 10em;
+}
+
+.button.characteristic li {
+  margin: 0.5em;
+}
+
+#start-trainer-button {
+  margin: auto;
+  display: block;
   font-size: 1em;
   height: 2em;
 }

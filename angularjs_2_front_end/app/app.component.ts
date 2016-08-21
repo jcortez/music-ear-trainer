@@ -8,7 +8,8 @@ import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/route
     selector: 'music-ear-trainer',
     directives: [ROUTER_DIRECTIVES],
     providers: [ROUTER_PROVIDERS],
-    templateUrl: 'app/app.component.html'
+    templateUrl: 'app/app.component.html',
+    styleUrls: ['app/app.component.css']
 })
 @RouteConfig([
   {
