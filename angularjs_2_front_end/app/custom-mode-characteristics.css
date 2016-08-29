@@ -12,17 +12,11 @@
   margin: 0em;
 }
 
-ul.button {
-  margin: 1em 10em 2em 10em;
+ul.button.chord-characteristic {
+  width: 50%;
+  margin: 1em auto 2em auto;
 }
 
-.button.characteristic li {
+.button.chord-characteristic li {
   margin: 0.5em;
-}
-
-#start-trainer-button {
-  margin: auto;
-  display: block;
-  font-size: 1em;
-  height: 2em;
 }

@@ -6,7 +6,7 @@ body {
   font-family: Impact, Charcoal, sans-serif;
 }
 
-ul.button {
+ul.button, ul.button-important {
   margin: 0em;
   padding: 0em;
 }
@@ -16,14 +16,33 @@ ul.button {
   list-style-type: none;
   width: 10em;
   margin: 1em 0em 1em 0em;
+  font-size: 1em;
   cursor: pointer;
   border-style: solid;
-  border-width: 0.01em;
+  border-width: 0.1em;
   border-radius: 0.5em;
   background-color: white;
   text-align: center;
 }
 
 .button li:hover {
+  background-color: #DDDDDD;
+}
+
+.button-important li {
+  margin: auto;
+  display: block;
+  font-size: 1.2em;
+  border-width: 0.12em;
+  list-style-type: none;
+  width: 10em;
+  cursor: pointer;
+  border-style: solid;
+  border-radius: 0.5em;
+  background-color: white;
+  text-align: center;
+}
+
+.button-important li:hover {
   background-color: #DDDDDD;
 }

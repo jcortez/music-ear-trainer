@@ -1,8 +1,24 @@
-#submit-button {
-  font-size: 1em;
-  height: 2em;
+h3 {
+  margin: 0.5em 0 0 0;
 }
 
-#play-again-button {
-  font-size: 1.3em;
+#score {
+  text-align: center;
+}
+
+ul.button {
+  margin-bottom: 0.5em;
+}
+
+.button.chord-root li {
+  margin-right: 0.5em;
+  width: 5em;
+}
+
+.button.chord-quality li {
+  margin-right: 0.5em;
+}
+
+.button.chord-inversion li {
+  margin-right: 0.5em;
 }
