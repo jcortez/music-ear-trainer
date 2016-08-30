@@ -1,15 +1,13 @@
 <h4 id="instructions">Please select the chord characteristics that you will be tested on. If no chord characteristics are selected, then the trainer will choose from all characteristics.</h4>
 
 <h2 id="chord-qualities-header">Chord Qualities</h2>
-<ul class="button chord-characteristic">
-  <li *ngFor="let quality of allChordCharacteristics.trainerChordQualities" (click)="onChordQualitySelected(quality)">{{quality}}</li>
+<ul class="button-list">
+  <li class="button chord-characteristic" *ngFor="let quality of allChordCharacteristics.trainerChordQualities" (click)="onChordQualitySelected(quality)">{{quality}}</li>
 </ul>
 
 <h2 id="chord-inversions-header">Chord Inversions</h2>
-<ul class="button chord-characteristic">
-  <li *ngFor="let inversion of allChordCharacteristics.trainerChordInversions" (click)="onChordInversionSelected(inversion)">{{inversion}}</li>
+<ul class="button-list">
+  <li class="button chord-characteristic" *ngFor="let inversion of allChordCharacteristics.trainerChordInversions" (click)="onChordInversionSelected(inversion)">{{inversion}}</li>
 </ul>
 
-<ul class="button-important">
-  <li (click)="onStartTrainerButtonSelected()">Start Trainer</li>
-</ul>
+<a class="button-important" (click)="onStartTrainerButtonSelected()">Start Trainer</a>

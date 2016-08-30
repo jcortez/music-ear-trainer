@@ -1,5 +1,5 @@
 <h2 id="select-mode-header">Select a mode</h2>
-<ul class="button-important mode">
-  <li *ngFor="let mode of trainerModes" (click)="onTrainerModeSelected(mode)">{{mode.name}}</li>
+<ul class="button-list">
+  <li class="button-important mode" *ngFor="let mode of trainerModes" (click)="onTrainerModeSelected(mode)">{{mode.name}}</li>
 </ul>
 <p id="sound-reminder-text">Make sure your headphones/speakers are on!</p>

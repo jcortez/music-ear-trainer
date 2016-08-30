@@ -4,19 +4,19 @@
 
 #chord-qualities-header {
   text-align: center;
-  margin: 0em;
+  margin: 0;
 }
 
 #chord-inversions-header {
   text-align: center;
-  margin: 0em;
+  margin: 0;
 }
 
-ul.button.chord-characteristic {
+ul.button-list {
   width: 50%;
   margin: 1em auto 2em auto;
 }
 
-.button.chord-characteristic li {
+.button.chord-characteristic {
   margin: 0.5em;
 }

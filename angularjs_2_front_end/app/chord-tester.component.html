@@ -1,22 +1,17 @@
 <h2 id="score">Score: {{currentNumberOfCorrectAnswers}}/{{currentNumberOfQuestionsAsked}} ({{currentScorePercentage}}%)</h2>
-<ul class="button-important">
-  <li (click)="onPlayAgainButtonClicked()">Play Chord Again</li>
-</ul>
-
+<a class="button-important" (click)="onPlayAgainButtonClicked()">Play Chord Again</a>
 
 <h3>Chord Root</h3>
-<ul class="button chord-root">
-  <li *ngFor="let root of TESTER_CHORD_ROOTS" (click)="onChordRootSelected(root)">{{root}}</li>
+<ul class="button-list">
+  <li class="button chord-root" *ngFor="let root of TESTER_CHORD_ROOTS" (click)="onChordRootSelected(root)">{{root}}</li>
 </ul>
 <h3>Chord Qualities</h3>
-<ul class="button chord-quality">
-  <li *ngFor="let quality of testerChordQualities" (click)="onChordQualitySelected(quality)">{{quality}}</li>
+<ul class="button-list">
+  <li class="button chord-quality" *ngFor="let quality of testerChordQualities" (click)="onChordQualitySelected(quality)">{{quality}}</li>
 </ul>
 <h3>Chord Inversions</h3>
-<ul class="button chord-inversion">
-  <li *ngFor="let inversion of testerChordInversions" (click)="onChordInversionSelected(inversion)">{{inversion}}</li>
+<ul class="button-list">
+  <li class="button chord-inversion" *ngFor="let inversion of testerChordInversions" (click)="onChordInversionSelected(inversion)">{{inversion}}</li>
 </ul>
 
-<ul class="button-important">
-  <li (click)="onSubmitButtonClicked()">Submit</li>
-</ul>
+<a class="button-important" (click)="onSubmitButtonClicked()">Submit</a>

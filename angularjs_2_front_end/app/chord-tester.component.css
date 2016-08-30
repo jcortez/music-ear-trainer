@@ -6,19 +6,19 @@ h3 {
   text-align: center;
 }
 
-ul.button {
+ul.button-list {
   margin-bottom: 0.5em;
 }
 
-.button.chord-root li {
+.button.chord-root {
   margin-right: 0.5em;
   width: 5em;
 }
 
-.button.chord-quality li {
+.button.chord-quality {
   margin-right: 0.5em;
 }
 
-.button.chord-inversion li {
+.button.chord-inversion {
   margin-right: 0.5em;
 }

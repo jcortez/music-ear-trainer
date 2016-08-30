@@ -6,7 +6,7 @@
   text-align: center;
 }
 
-.button-important.mode li {
+.button-important.mode {
   display: list-item;
   margin-top: 0.5em;
 }
