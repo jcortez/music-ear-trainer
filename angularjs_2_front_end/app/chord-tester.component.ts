@@ -3,7 +3,7 @@ import { QuestionService } from './question.service';
 import { Chord } from './chord';
 import { Answer } from './answer';
 import { AnswerResponse } from './answer-response';
-import { RouteParams } from '@angular/router-deprecated';
+import { ActivatedRoute, Params } from '@angular/router';
 declare var MIDI: any;
 
 @Component({
@@ -29,15 +29,20 @@ export class ChordTester {
   public currentNumberOfQuestionsAsked: number;
   public currentScorePercentage: number;
 
-  constructor(private questionService: QuestionService, private routeParams:
-    RouteParams) { }
+  constructor(private questionService: QuestionService, private activatedRoute:
+    ActivatedRoute) { }
 
   ngOnInit() {
     this.currentNumberOfCorrectAnswers = 0;
     this.currentNumberOfQuestionsAsked = 0;
     this.currentScorePercentage = 0;
-    let routerChordQualities = this.routeParams.get('trainerChordQualities');
-    let routerChordInversions = this.routeParams.get('trainerChordInversions');
+
+    let routerChordQualities = "";
+    let routerChordInversions = "";
+    this.activatedRoute.params.forEach((param: Params) => {
+      routerChordQualities = param['trainerChordQualities'].split(',');
+      routerChordInversions = param['trainerChordInversions'].split(',');
+    });
     // Checking to make sure router parameters exist.
     if (routerChordQualities === "" || routerChordQualities === null ||
       Object.keys(routerChordQualities).length === 0 ||

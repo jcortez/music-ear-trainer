@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CustomModeCharacteristicsService } from './custom-mode-characteristics.service';
 import { ChordCharacteristics } from './chord-characteristics';
-import { Router } from '@angular/router-deprecated';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'custom-mode-characteristics',
@@ -93,7 +93,7 @@ export class CustomModeCharacteristics {
     }
 
     let chordCharacteristics = new ChordCharacteristics(chordQualities, chordInversions);
-    this.router.navigate(['ChordTester', chordCharacteristics]);
+    this.router.navigate(['/chordTester', chordCharacteristics]);
   }
 
 }

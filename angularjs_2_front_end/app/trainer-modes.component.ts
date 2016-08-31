@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TrainerModeService } from './trainer-mode.service';
-import { ROUTER_DIRECTIVES, ROUTER_PROVIDERS, RouteConfig, Router } from '@angular/router-deprecated';
+import { Router } from '@angular/router';
 import { TrainerMode } from './trainer-mode-object';
 
 @Component({
@@ -30,6 +30,6 @@ export class TrainerModesComponent {
       return;
     }
 
-    this.router.navigate(['CustomMode']);
+    this.router.navigate(['/customMode']);
   }
 }
