@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, Renderer } from '@angular/core';
 import { QuestionService } from './question.service';
 import { Chord } from './chord';
 import { Answer } from './answer';
 import { AnswerResponse } from './answer-response';
 import { ActivatedRoute, Params } from '@angular/router';
+import { BUTTON_ENABLED_CSS_CLASS } from './button-enabled.directive';
 declare var MIDI: any;
 
 @Component({
@@ -28,9 +29,13 @@ export class ChordTester {
   public currentNumberOfCorrectAnswers: number;
   public currentNumberOfQuestionsAsked: number;
   public currentScorePercentage: number;
+  // The ButtonEnabledDirective will set these when the appropriate event is raised.
+  private currentSelectedChordRoot: ElementRef;
+  private currentSelectedChordQuality: ElementRef;
+  private currentSelectedChordInversion: ElementRef;
 
   constructor(private questionService: QuestionService, private activatedRoute:
-    ActivatedRoute) { }
+    ActivatedRoute, private renderer: Renderer) { }
 
   ngOnInit() {
     this.currentNumberOfCorrectAnswers = 0;
@@ -58,15 +63,54 @@ export class ChordTester {
   }
 
   onChordRootSelected(root) {
-    this.currentAnswer.answer.chordRoot = root;
+    // There is no easy way to accomplish this with an attribute directive, so
+    // this logic (and similarly for the chord quality and inversion) has to be
+    // done here.
+    if (this.currentSelectedChordRoot !== undefined &&
+        this.currentSelectedChordRoot.nativeElement.textContent !== root) {
+      this.renderer.setElementClass(this.currentSelectedChordRoot.nativeElement,
+        BUTTON_ENABLED_CSS_CLASS, false);
+    }
+
+    // Checking if chord root button was disabled to unset the selected root.
+    if (this.currentAnswer.answer.chordRoot === root) {
+      this.currentAnswer.answer.chordRoot = "";
+    }
+    else {
+      this.currentAnswer.answer.chordRoot = root;
+    }
   }
 
   onChordQualitySelected(quality) {
-    this.currentAnswer.answer.chordQuality = quality;
+    if (this.currentSelectedChordQuality !== undefined &&
+        this.currentSelectedChordQuality.nativeElement.textContent !== quality) {
+      this.renderer.setElementClass(this.currentSelectedChordQuality.nativeElement,
+        BUTTON_ENABLED_CSS_CLASS, false);
+    }
+
+    // Checking if chord quality button was disabled to unset the selected quality.
+    if (this.currentAnswer.answer.chordQuality === quality) {
+      this.currentAnswer.answer.chordQuality = "";
+    }
+    else {
+      this.currentAnswer.answer.chordQuality = quality;
+    }
   }
 
   onChordInversionSelected(inversion) {
-    this.currentAnswer.answer.chordInversion = inversion;
+    if (this.currentSelectedChordInversion !== undefined &&
+        this.currentSelectedChordInversion.nativeElement.textContent !== inversion) {
+      this.renderer.setElementClass(this.currentSelectedChordInversion.nativeElement,
+        BUTTON_ENABLED_CSS_CLASS, false);
+    }
+
+    // Checking if chord inversion button was disabled to unset the selected inversion.
+    if (this.currentAnswer.answer.chordInversion === inversion) {
+      this.currentAnswer.answer.chordInversion = "";
+    }
+    else {
+      this.currentAnswer.answer.chordInversion = inversion;
+    }
   }
 
   onPlayAgainButtonClicked() {
@@ -88,6 +132,18 @@ export class ChordTester {
   private getNextQuestion() : Promise<string> {
     // Resetting the current answer.
     this.currentAnswer = new Answer();
+    if (this.currentSelectedChordRoot !== undefined) {
+      this.renderer.setElementClass(this.currentSelectedChordRoot.nativeElement,
+        BUTTON_ENABLED_CSS_CLASS, false);
+    }
+    if (this.currentSelectedChordQuality !== undefined) {
+      this.renderer.setElementClass(this.currentSelectedChordQuality.nativeElement,
+        BUTTON_ENABLED_CSS_CLASS, false);
+    }
+    if (this.currentSelectedChordInversion !== undefined) {
+      this.renderer.setElementClass(this.currentSelectedChordInversion.nativeElement,
+        BUTTON_ENABLED_CSS_CLASS, false);
+    }
     return this.questionService.getQuestionCustomMode(this.testerChordQualities,
     this.testerChordInversions).then(question => this.currentAnswer.questionMidiFileName
     = question.questionMidiFileName).catch(error => window.alert(error._body));
@@ -143,6 +199,36 @@ export class ChordTester {
     }
     else {
       return true;
+    }
+  }
+
+  // Called when the chordRootButtonEnabled event is raised.
+  public setCurrentSelectedChordRoot($event) {
+    if ($event.buttonEnabled) {
+      this.currentSelectedChordRoot = $event.element;
+    }
+    else {
+      this.currentSelectedChordRoot = undefined;
+    }
+  }
+
+  // Called when the chordQualityButtonEnabled event is raised.
+  public setCurrentSelectedChordQuality($event) {
+    if ($event.buttonEnabled) {
+      this.currentSelectedChordQuality = $event.element;
+    }
+    else {
+      this.currentSelectedChordQuality = undefined;
+    }
+  }
+
+  // Called when the chordInversionButtonEnabled event is raised.
+  public setCurrentSelectedChordInversion($event) {
+    if ($event.buttonEnabled) {
+      this.currentSelectedChordInversion = $event.element;
+    }
+    else {
+      this.currentSelectedChordInversion = undefined;
     }
   }
 

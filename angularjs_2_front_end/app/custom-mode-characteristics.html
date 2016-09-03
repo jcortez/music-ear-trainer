@@ -2,12 +2,12 @@
 
 <h2 id="chord-qualities-header">Chord Qualities</h2>
 <ul class="button-list">
-  <li class="button chord-characteristic" *ngFor="let quality of allChordCharacteristics.trainerChordQualities" (click)="onChordQualitySelected(quality)">{{quality}}</li>
+  <li buttonEnabled class="button chord-characteristic" *ngFor="let quality of allChordCharacteristics.trainerChordQualities" (click)="onChordQualitySelected(quality)">{{quality}}</li>
 </ul>
 
 <h2 id="chord-inversions-header">Chord Inversions</h2>
 <ul class="button-list">
-  <li class="button chord-characteristic" *ngFor="let inversion of allChordCharacteristics.trainerChordInversions" (click)="onChordInversionSelected(inversion)">{{inversion}}</li>
+  <li buttonEnabled class="button chord-characteristic" *ngFor="let inversion of allChordCharacteristics.trainerChordInversions" (click)="onChordInversionSelected(inversion)">{{inversion}}</li>
 </ul>
 
 <a class="button-important" (click)="onStartTrainerButtonSelected()">Start Trainer</a>

@@ -29,6 +29,10 @@ ul.button-list, ul.button-important-list {
   background-color: #DDDDDD;
 }
 
+.button-enabled, .button-enabled:hover {
+  background-color: #AAAAAA;
+}
+
 .button-important {
   margin: auto;
   display: block;
