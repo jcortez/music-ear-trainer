@@ -1,13 +1,48 @@
 h3 {
-  margin: 0.5em 0 0 0;
+  margin: 1em 0 0 0;
 }
 
 #score {
   text-align: center;
 }
 
-ul.button-list {
+#left-panel {
+  height: 350px;
+  float: left;
+}
+
+#answer-text {
   margin-bottom: 0.5em;
+}
+
+#chord-tester-piano {
+  height: 250px;
+}
+
+#right-panel {
+  float: left;
+}
+
+#chord-roots {
+  float: left;
+  margin-left: 1.2em;
+  width: 11.3em;
+}
+
+#chord-qualities {
+  float: left;
+  margin-left: 1.2em;
+  max-width: 21.4em;
+}
+
+#chord-inversions {
+  float: left;
+  margin-left: 1.2em;
+  max-width: 11.5em;
+}
+
+ul.button-list {
+  margin: 0;
 }
 
 .button.chord-root {

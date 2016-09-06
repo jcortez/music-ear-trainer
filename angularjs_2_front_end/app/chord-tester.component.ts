@@ -62,6 +62,10 @@ export class ChordTester {
     this.getNextQuestion().then(output => this.playQuestionMIDIFile());
   }
 
+  ngAfterViewInit() {
+    window.alert("Please click on the Chord Root, Chord Quality, and Chord Inversion buttons to make your selection and then click the Submit button.");
+  }
+
   onChordRootSelected(root) {
     // There is no easy way to accomplish this with an attribute directive, so
     // this logic (and similarly for the chord quality and inversion) has to be

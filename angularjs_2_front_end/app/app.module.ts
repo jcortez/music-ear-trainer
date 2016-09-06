@@ -10,6 +10,7 @@ import { ButtonEnabledDirective } from './button-enabled.directive';
 import { ChordRootButtonEnabledDirective } from './chord-root-button-enabled.directive';
 import { ChordQualityButtonEnabledDirective } from './chord-quality-button-enabled.directive';
 import { ChordInversionButtonEnabledDirective } from './chord-inversion-button-enabled.directive';
+import { BeautifulPiano } from './beautiful-piano.component';
 
 @NgModule({
     declarations: [
@@ -20,7 +21,8 @@ import { ChordInversionButtonEnabledDirective } from './chord-inversion-button-e
       ButtonEnabledDirective,
       ChordRootButtonEnabledDirective,
       ChordQualityButtonEnabledDirective,
-      ChordInversionButtonEnabledDirective
+      ChordInversionButtonEnabledDirective,
+      BeautifulPiano
     ],
     imports:      [ BrowserModule, HttpModule, routing ],
     bootstrap:    [ AppComponent ],

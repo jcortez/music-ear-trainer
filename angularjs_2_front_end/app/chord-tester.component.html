@@ -1,17 +1,30 @@
 <h2 id="score">Score: {{currentNumberOfCorrectAnswers}}/{{currentNumberOfQuestionsAsked}} ({{currentScorePercentage}}%)</h2>
 <a class="button-important" (click)="onPlayAgainButtonClicked()">Play Chord Again</a>
+<div id="left-panel">
+  <h3 id="answer-text">Your Answer:</h3>
+  <div id="chord-tester-piano">
+    <beautiful-piano></beautiful-piano>
+  </div>
+  <a class="button-important" (click)="onSubmitButtonClicked()">Submit</a>
+</div>
 
-<h3>Chord Root</h3>
-<ul class="button-list">
-  <li crButtonEnabled class="button chord-root" *ngFor="let root of TESTER_CHORD_ROOTS" (click)="onChordRootSelected(root)" (chordRootButtonEnabled)="setCurrentSelectedChordRoot($event)">{{root}}</li>
-</ul>
-<h3>Chord Quality</h3>
-<ul class="button-list">
-  <li cqButtonEnabled class="button chord-quality" *ngFor="let quality of testerChordQualities" (click)="onChordQualitySelected(quality)" (chordQualityButtonEnabled)="setCurrentSelectedChordQuality($event)">{{quality}}</li>
-</ul>
-<h3>Chord Inversion</h3>
-<ul class="button-list">
-  <li ciButtonEnabled class="button chord-inversion" *ngFor="let inversion of testerChordInversions" (click)="onChordInversionSelected(inversion)" (chordInversionButtonEnabled)="setCurrentSelectedChordInversion($event)">{{inversion}}</li>
-</ul>
-
-<a class="button-important" (click)="onSubmitButtonClicked()">Submit</a>
+<div id="right-panel">
+  <div id="chord-roots">
+    <h3>Chord Root</h3>
+    <ul class="button-list">
+        <li crButtonEnabled class="button chord-root" *ngFor="let root of TESTER_CHORD_ROOTS" (click)="onChordRootSelected(root)" (chordRootButtonEnabled)="setCurrentSelectedChordRoot($event)">{{root}}</li>
+    </ul>
+  </div>
+  <div id="chord-qualities">
+    <h3>Chord Quality</h3>
+    <ul class="button-list">
+      <li cqButtonEnabled class="button chord-quality" *ngFor="let quality of testerChordQualities" (click)="onChordQualitySelected(quality)" (chordQualityButtonEnabled)="setCurrentSelectedChordQuality($event)">{{quality}}</li>
+    </ul>
+  </div>
+  <div id="chord-inversions">
+    <h3>Chord Inversion</h3>
+    <ul class="button-list">
+      <li ciButtonEnabled class="button chord-inversion" *ngFor="let inversion of testerChordInversions" (click)="onChordInversionSelected(inversion)" (chordInversionButtonEnabled)="setCurrentSelectedChordInversion($event)">{{inversion}}</li>
+    </ul>
+  </div>
+</div>
