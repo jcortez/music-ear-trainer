@@ -1,7 +1,9 @@
 <h2 id="score">Score: {{currentNumberOfCorrectAnswers}}/{{currentNumberOfQuestionsAsked}} ({{currentScorePercentage}}%)</h2>
 <a class="button-important" (click)="onPlayAgainButtonClicked()">Play Chord Again</a>
 <div id="left-panel">
-  <h3 id="answer-text">Your Answer:</h3>
+  <h3 class="answer-text" *ngIf="!answerSubmitted">Your Answer: {{currentAnswerString}}</h3>
+  <h3 class="answer-text" chordTesterAnswer [answerCorrect]=userAnswerIsCorrect *ngIf="answerSubmitted">Correct Answer is: {{correctAnswer.chordRoot}} {{correctAnswer.chordQuality}} {{correctAnswer.chordInversion}}</h3>
+  <a class="button-important" id="next-question-button" *ngIf="answerSubmitted" (click)="onNextQuestionButtonClicked()">Next Question</a>
   <div id="chord-tester-piano">
     <beautiful-piano></beautiful-piano>
   </div>

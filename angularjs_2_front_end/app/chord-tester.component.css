@@ -8,10 +8,23 @@ h3 {
 
 #left-panel {
   height: 350px;
+  width: 570px;
   float: left;
 }
 
-#answer-text {
+.answer-text {
+  margin-bottom: 0.5em;
+}
+
+.answer-correct {
+  color: #009933;
+}
+
+.answer-incorrect {
+  color: #FF4136;
+}
+
+#next-question-button.button-important {
   margin-bottom: 0.5em;
 }
 

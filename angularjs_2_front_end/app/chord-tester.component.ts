@@ -22,10 +22,14 @@ export class ChordTester {
   // All possible chord roots that can be selected for the chord.
   public TESTER_CHORD_ROOTS = [ "C", "C#/Db", "D", "D#/Eb", "E", "F", "F#/Gb",
   "G", "G#/Ab", "A", "A#/Bb", "B/Cb" ];
+  public answerSubmitted: boolean;
+  public correctAnswer: Chord;
+  public userAnswerIsCorrect: boolean;
   public testerChordQualities;
   public testerChordInversions;
   // The user's answer made up of the selected chord characteristics.
   private currentAnswer: Answer;
+  public currentAnswerString: string;
   public currentNumberOfCorrectAnswers: number;
   public currentNumberOfQuestionsAsked: number;
   public currentScorePercentage: number;
@@ -38,6 +42,9 @@ export class ChordTester {
     ActivatedRoute, private renderer: Renderer) { }
 
   ngOnInit() {
+    this.answerSubmitted = false;
+    this.currentAnswerString = "";
+    this.userAnswerIsCorrect = false;
     this.currentNumberOfCorrectAnswers = 0;
     this.currentNumberOfQuestionsAsked = 0;
     this.currentScorePercentage = 0;
@@ -83,6 +90,7 @@ export class ChordTester {
     else {
       this.currentAnswer.answer.chordRoot = root;
     }
+    this.showSelectedAnswerString();
   }
 
   onChordQualitySelected(quality) {
@@ -99,6 +107,7 @@ export class ChordTester {
     else {
       this.currentAnswer.answer.chordQuality = quality;
     }
+    this.showSelectedAnswerString();
   }
 
   onChordInversionSelected(inversion) {
@@ -115,6 +124,20 @@ export class ChordTester {
     else {
       this.currentAnswer.answer.chordInversion = inversion;
     }
+    this.showSelectedAnswerString();
+  }
+
+  // Showing selected chord characteristics as answer in GUI if the user has
+  // selected from all characteristics.
+  private showSelectedAnswerString() {
+    if (this.allChordCharacteristicsSelected()) {
+      this.currentAnswerString = this.currentAnswer.answer.chordRoot + " "
+        + this.currentAnswer.answer.chordQuality + " "
+        + this.currentAnswer.answer.chordInversion;
+    }
+    else {
+      this.currentAnswerString = "";
+    }
   }
 
   onPlayAgainButtonClicked() {
@@ -129,6 +152,9 @@ export class ChordTester {
       return;
     }
     this.checkUserAnswer();
+  }
+
+  onNextQuestionButtonClicked() {
     this.getNextQuestion().then(output => this.playQuestionMIDIFile());
   }
 
@@ -136,6 +162,11 @@ export class ChordTester {
   private getNextQuestion() : Promise<string> {
     // Resetting the current answer.
     this.currentAnswer = new Answer();
+    this.currentAnswerString = "";
+    this.answerSubmitted = false;
+    this.userAnswerIsCorrect = false;
+    this.correctAnswer = undefined;
+
     if (this.currentSelectedChordRoot !== undefined) {
       this.renderer.setElementClass(this.currentSelectedChordRoot.nativeElement,
         BUTTON_ENABLED_CSS_CLASS, false);
@@ -173,18 +204,17 @@ export class ChordTester {
   // GUI.
   private processAnswerResponse(answerResponse : AnswerResponse) {
     if (answerResponse.userAnswerCorrect) {
-      window.alert("Your answer was correct!");
       this.currentNumberOfCorrectAnswers++;
+      this.userAnswerIsCorrect = true;
     }
     else {
-      window.alert("Your answer was incorrect! The correct chord was " +
-        answerResponse.correctAnswer.chordRoot + " " +
-        answerResponse.correctAnswer.chordQuality + " " +
-        answerResponse.correctAnswer.chordInversion);
+      this.userAnswerIsCorrect = false;
     }
     this.currentNumberOfQuestionsAsked++;
     this.currentScorePercentage = Math.round(this.currentNumberOfCorrectAnswers/
       this.currentNumberOfQuestionsAsked*100);
+    this.answerSubmitted = true;
+    this.correctAnswer = answerResponse.correctAnswer;
   }
 
   // Checks the user's answer by sending it to the server.
