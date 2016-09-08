@@ -14,11 +14,12 @@ import javax.xml.xpath.XPathFactory;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
 import com.google.inject.BindingAnnotation;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
 
-// Reads the chord/file mappings from an XML file. See ChordFileStore for more
+// Reads chord and MIDI information from an XML file. See ChordFileStore for more
 // details.
 @Singleton
 public class XMLChordFileStore implements ChordFileStore
@@ -92,5 +93,33 @@ public class XMLChordFileStore implements ChordFileStore
         }
 
         return null;
+    }
+
+    @Override
+    public int[] getMIDINotes(Chord chord)
+    {
+        XPath xpath = XPathFactory.newInstance().newXPath();
+        String expression = "/questions/question[answer/chordRoot/text()='" +
+                chord.getChordRootString() + "' and answer/chordQuality/text()='" +
+                chord.getChordQualityString() + "' and answer/chordInversion/text()='" +
+                chord.getChordInversionString() + "']/midiNotes/*";
+        try
+        {
+            NodeList nodeList = (NodeList) xpath.evaluate(expression, questionsData, XPathConstants.NODESET);
+            int[] midiNotes = new int[nodeList.getLength()];
+
+            for (int i = 0; i < nodeList.getLength(); i++)
+            {
+                midiNotes[i] = Integer.parseInt(nodeList.item(i).getTextContent());
+            }
+
+            return midiNotes;
+        }
+        catch (Exception e)
+        {
+            logger.error(e, e);
+        }
+
+        return new int[0];
     }   
 }

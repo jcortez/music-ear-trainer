@@ -44,7 +44,8 @@ public class CustomModeImpl implements CustomMode
         // are the same, then the user answered correctly.
         Chord correctAnswer = chordFileStore.getChordForMidiFile(userAnswer.getQuestionMidiFileName());
         boolean userAnsweredCorrectly = userAnswer.getAnswer().equals(correctAnswer);
-        return new AnswerResponse(userAnsweredCorrectly, correctAnswer);
+        int[] midiNotes = chordFileStore.getMIDINotes(correctAnswer);
+        return new AnswerResponse(userAnsweredCorrectly, correctAnswer, midiNotes);
     }
 
     @Override

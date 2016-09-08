@@ -23,4 +23,10 @@ public class DummyChordFileStore implements ChordFileStore
     {
         return new Chord(ChordRoot.C, ChordQuality.MAJ, ChordInversion.ROOT_POS);
     }
+
+    @Override
+    public int[] getMIDINotes(Chord chord)
+    {
+        return new int[] { 60, 64, 67 };
+    }
 }

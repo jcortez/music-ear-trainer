@@ -65,4 +65,25 @@ public class TestXMLChordFileStore
         Chord correctChord = new Chord(null, null, null);
         assertEquals(correctChord, generatedChord);
     }
+
+    @Test
+    // Tests the getMIDINotes() method with a valid Chord object.
+    public void testGetMIDINotesValidChord()
+    {
+        Chord chord = new Chord(ChordRoot.E, ChordQuality.HALF_DIM_SEVENTH, ChordInversion.ROOT_POS);
+        int[] midiNotes = fileStore.getMIDINotes(chord);
+        assertEquals(64, midiNotes[0]);
+        assertEquals(67, midiNotes[1]);
+        assertEquals(70, midiNotes[2]);
+        assertEquals(74, midiNotes[3]);
+    }
+
+    @Test
+    // Tests the getMIDINotes() method with an invalid Chord object.
+    public void testGetMIDINotesInvalidChord()
+    {
+        Chord chord = new Chord(ChordRoot.A_SHARP_B_FLAT, ChordQuality.AUG, ChordInversion.THIRD_INV);
+        int[] midiNotes = fileStore.getMIDINotes(chord);
+        assertEquals(0, midiNotes.length);
+    }
 }

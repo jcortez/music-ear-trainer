@@ -15,6 +15,8 @@ public class AnswerResponse
     private boolean userAnswerCorrect = false;
     // The correct answer for the question that was presented to the user.
     private Chord correctAnswer = null;
+    // The MIDI notes of the correct answer;
+    private int[] midiNotes = new int[0];
 
     public AnswerResponse()
     {
@@ -22,12 +24,14 @@ public class AnswerResponse
         // answer.
         userAnswerCorrect = false;
         correctAnswer = null;
+        midiNotes = new int[0];
     }
 
-    public AnswerResponse(boolean correct, Chord answer)
+    public AnswerResponse(boolean correct, Chord answer, int[] notes)
     {
         userAnswerCorrect = correct;
         correctAnswer = answer;
+        midiNotes = notes;
     }
 
     // Returns true if the user's is correct, false if the user is incorrect.
@@ -40,5 +44,10 @@ public class AnswerResponse
     public Chord getCorrectAnswer()
     {
         return correctAnswer;
+    }
+
+    public int[] getMidiNotes()
+    {
+        return midiNotes;
     }
 }

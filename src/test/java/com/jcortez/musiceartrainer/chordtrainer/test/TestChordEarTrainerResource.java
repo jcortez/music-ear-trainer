@@ -100,7 +100,13 @@ public class TestChordEarTrainerResource
         Chord chordAnswer = new Chord(ChordRoot.A, ChordQuality.AUG, ChordInversion.ROOT_POS);
         Answer answer = new Answer(midiFile, chordAnswer);
         AnswerResponse response = restResource.submitCustomModeAnswer(answer);
+        assertEquals(ChordRoot.A, response.getCorrectAnswer().getChordRoot());
+        assertEquals(ChordQuality.AUG, response.getCorrectAnswer().getChordQuality());
+        assertEquals(ChordInversion.ROOT_POS, response.getCorrectAnswer().getChordInversion());
         assertTrue(response.getUserAnswerCorrect());
+        assertEquals(69, response.getMidiNotes()[0]);
+        assertEquals(73, response.getMidiNotes()[1]);
+        assertEquals(77, response.getMidiNotes()[2]);
     }
 
     @Test
