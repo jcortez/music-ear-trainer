@@ -7,9 +7,12 @@ export class AnswerResponse {
   userAnswerCorrect: boolean;
   // The correct answer for the question that was presented to the user.
   correctAnswer: Chord;
+  // The MIDI notes of the correct answer;
+  midiNotes: number[];
 
-  constructor(userAnswerIsCorrect: boolean, correctAnswer: Chord) {
+  constructor(userAnswerIsCorrect: boolean, correctAnswer: Chord, midiNotes: number[]) {
     this.userAnswerCorrect = userAnswerIsCorrect;
     this.correctAnswer = correctAnswer;
+    this.midiNotes = midiNotes;
   }
 }

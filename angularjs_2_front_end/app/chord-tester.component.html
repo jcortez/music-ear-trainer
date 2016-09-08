@@ -5,7 +5,7 @@
   <h3 class="answer-text" chordTesterAnswer [answerCorrect]=userAnswerIsCorrect *ngIf="answerSubmitted">Correct Answer is: {{correctAnswer.chordRoot}} {{correctAnswer.chordQuality}} {{correctAnswer.chordInversion}}</h3>
   <a class="button-important" id="next-question-button" *ngIf="answerSubmitted" (click)="onNextQuestionButtonClicked()">Next Question</a>
   <div id="chord-tester-piano">
-    <beautiful-piano></beautiful-piano>
+    <beautiful-piano [pianoKeysPressed]="pianoKeys"></beautiful-piano>
   </div>
   <a class="button-important" (click)="onSubmitButtonClicked()">Submit</a>
 </div>

@@ -29,6 +29,7 @@ h3 {
 }
 
 #chord-tester-piano {
+  pointer-events: none;
   height: 250px;
 }
 

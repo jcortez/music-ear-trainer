@@ -15,7 +15,7 @@ public class AnswerResponse
     private boolean userAnswerCorrect = false;
     // The correct answer for the question that was presented to the user.
     private Chord correctAnswer = null;
-    // The MIDI notes of the correct answer;
+    // The MIDI notes of the correct answer.
     private int[] midiNotes = new int[0];
 
     public AnswerResponse()
