@@ -2,6 +2,7 @@ package com.jcortez.musiceartrainer.chordtrainer.test;
 
 import static org.junit.Assert.*;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.junit.Test;
 import com.google.inject.AbstractModule;
@@ -24,6 +25,7 @@ import com.jcortez.musiceartrainer.rest.chordtrainer.model.ChordRoot;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.CustomMode;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.CustomModeImpl;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.InvalidChordCharacteristicsException;
+import com.jcortez.musiceartrainer.rest.chordtrainer.model.MIDINotes;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.Question;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.TrainerMode;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.UserSelectableChordCharacteristics;
@@ -125,5 +127,15 @@ public class TestChordEarTrainerResource
         Answer answer = new Answer(midiFile, chordAnswer);
         AnswerResponse response = restResource.submitCustomModeAnswer(answer);
         assertFalse(response.getUserAnswerCorrect());
+    }
+
+    @Test
+    // Tests the getMidiNotesForChord() method.
+    public void testGetMidiNotesForChord()
+    {
+        Chord chord = new Chord(ChordRoot.D_SHARP_E_FLAT, ChordQuality.MIN_SEVENTH, ChordInversion.FIRST_INV);
+        int[] midiNotes = restResource.getMidiNotesForChord(chord).getMidiNotes();
+        int[] correctNotes = new int[] { 66, 70, 73, 75 };
+        assertTrue(Arrays.equals(midiNotes, correctNotes));
     }
 }

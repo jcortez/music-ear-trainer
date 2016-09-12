@@ -13,9 +13,12 @@ import com.google.inject.Inject;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.Answer;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.AnswerResponse;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.ChallengeMode;
+import com.jcortez.musiceartrainer.rest.chordtrainer.model.Chord;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.ChordCharacteristicsToTest;
+import com.jcortez.musiceartrainer.rest.chordtrainer.model.ChordFileStore;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.CustomMode;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.InvalidChordCharacteristicsException;
+import com.jcortez.musiceartrainer.rest.chordtrainer.model.MIDINotes;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.Question;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.TrainerMode;
 import com.jcortez.musiceartrainer.rest.chordtrainer.model.UserSelectableChordCharacteristics;
@@ -27,14 +30,17 @@ public class ChordEarTrainerResource
     private final ChallengeMode challengeMode;
     private final CustomMode customMode;
     private final UserSelectableChordCharacteristics userSelectableChordCharacteristics;
+    private final ChordFileStore chordFileStore;
 
     @Inject
     public ChordEarTrainerResource(final ChallengeMode challengeMode, final CustomMode customMode,
-            final UserSelectableChordCharacteristics userSelectableChordCharacteristics)
+            final UserSelectableChordCharacteristics userSelectableChordCharacteristics,
+            final ChordFileStore fileStore)
     {
         this.challengeMode = challengeMode;
         this.customMode = customMode;
         this.userSelectableChordCharacteristics = userSelectableChordCharacteristics;
+        this.chordFileStore = fileStore;
     }
 
     @GET
@@ -124,6 +130,22 @@ public class ChordEarTrainerResource
         else
         {
             return customMode.checkAnswer(userAnswer);
+        }
+    }
+
+    @GET
+    @Path("/info/midi-notes")
+    @Produces(MediaType.APPLICATION_JSON)
+    // Returns the MIDI notes that make up a chord in the chord ear trainer.
+    public MIDINotes getMidiNotesForChord(@BeanParam Chord chord)
+    {
+        if (chord == null)
+        {
+            return null;
+        }
+        else
+        {
+            return new MIDINotes(chordFileStore.getMIDINotes(chord));
         }
     }
 

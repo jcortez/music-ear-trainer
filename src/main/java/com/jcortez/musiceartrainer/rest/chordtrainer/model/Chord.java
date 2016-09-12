@@ -1,5 +1,6 @@
 package com.jcortez.musiceartrainer.rest.chordtrainer.model;
 
+import javax.ws.rs.QueryParam;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -87,6 +88,7 @@ public class Chord
 
     // Sets the chord root using the full chord root name.
     @XmlElement
+    @QueryParam("chordRoot")
     public void setChordRoot(String fullChordRootName)
     {
         if (fullChordRootName != null)
@@ -97,6 +99,7 @@ public class Chord
 
     // Sets the chord quality using the full chord quality name.
     @XmlElement
+    @QueryParam("chordQuality")
     public void setChordQuality(String fullChordQualityName)
     {
         if (fullChordQualityName != null)
@@ -107,6 +110,7 @@ public class Chord
 
     // Sets the chord inversion using the full chord inversion name.
     @XmlElement
+    @QueryParam("chordInversion")
     public void setChordInversion(String fullChordInversionName)
     {
         if (fullChordInversionName != null)

@@ -5,13 +5,14 @@ import { Answer } from './answer';
 import { AnswerResponse } from './answer-response';
 import { ActivatedRoute, Params } from '@angular/router';
 import { BUTTON_ENABLED_CSS_CLASS } from './button-enabled.directive';
+import { InfoService } from './info.service';
 declare var MIDI: any;
 
 @Component({
   selector: 'chord-tester',
   templateUrl: 'app/chord-tester.component.html',
   styleUrls: ['app/chord-tester.component.css'],
-  providers: [QuestionService]
+  providers: [ QuestionService, InfoService ]
 })
 // The view that plays the music file for the chord and tests that the user
 // selects the correct chord.
@@ -37,9 +38,14 @@ export class ChordTester {
   private currentSelectedChordRoot: ElementRef;
   private currentSelectedChordQuality: ElementRef;
   private currentSelectedChordInversion: ElementRef;
+  // The pressed piano keys to show in the GUI. Each key is stored in scientific
+  // notation.
+  public pianoKeys: string[];
+  // Used to convert MIDI notes to scientific notation.
+  private static NOTE_NAMES = [ 'C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab', 'A', 'Bb', 'B'];
 
   constructor(private questionService: QuestionService, private activatedRoute:
-    ActivatedRoute, private renderer: Renderer) { }
+    ActivatedRoute, private renderer: Renderer, private infoService: InfoService) { }
 
   ngOnInit() {
     this.answerSubmitted = false;
@@ -48,6 +54,7 @@ export class ChordTester {
     this.currentNumberOfCorrectAnswers = 0;
     this.currentNumberOfQuestionsAsked = 0;
     this.currentScorePercentage = 0;
+    this.pianoKeys = [ ];
 
     let routerChordQualities = "";
     let routerChordInversions = "";
@@ -90,7 +97,7 @@ export class ChordTester {
     else {
       this.currentAnswer.answer.chordRoot = root;
     }
-    this.showSelectedAnswerString();
+    this.showSelectedAnswerInGUI();
   }
 
   onChordQualitySelected(quality) {
@@ -107,7 +114,7 @@ export class ChordTester {
     else {
       this.currentAnswer.answer.chordQuality = quality;
     }
-    this.showSelectedAnswerString();
+    this.showSelectedAnswerInGUI();
   }
 
   onChordInversionSelected(inversion) {
@@ -124,19 +131,23 @@ export class ChordTester {
     else {
       this.currentAnswer.answer.chordInversion = inversion;
     }
-    this.showSelectedAnswerString();
+    this.showSelectedAnswerInGUI();
   }
 
   // Showing selected chord characteristics as answer in GUI if the user has
   // selected from all characteristics.
-  private showSelectedAnswerString() {
+  private showSelectedAnswerInGUI() {
     if (this.allChordCharacteristicsSelected()) {
       this.currentAnswerString = this.currentAnswer.answer.chordRoot + " "
         + this.currentAnswer.answer.chordQuality + " "
         + this.currentAnswer.answer.chordInversion;
+      this.infoService.getMidiNotesForChord(this.currentAnswer.answer)
+        .then((allMidiNotes) => this.pianoKeys = allMidiNotes.midiNotes.map(this.convertMidiToScientificNotation))
+        .catch(error => window.alert(error._body));
     }
     else {
       this.currentAnswerString = "";
+      this.pianoKeys = [ ];
     }
   }
 
@@ -163,6 +174,7 @@ export class ChordTester {
     // Resetting the current answer.
     this.currentAnswer = new Answer();
     this.currentAnswerString = "";
+    this.pianoKeys = [ ];
     this.answerSubmitted = false;
     this.userAnswerIsCorrect = false;
     this.correctAnswer = undefined;
@@ -213,8 +225,9 @@ export class ChordTester {
     this.currentNumberOfQuestionsAsked++;
     this.currentScorePercentage = Math.round(this.currentNumberOfCorrectAnswers/
       this.currentNumberOfQuestionsAsked*100);
-    this.answerSubmitted = true;
     this.correctAnswer = answerResponse.correctAnswer;
+    this.answerSubmitted = true;
+    this.pianoKeys = answerResponse.midiNotes.map((midiNote) => this.convertMidiToScientificNotation(midiNote));
   }
 
   // Checks the user's answer by sending it to the server.
@@ -264,6 +277,14 @@ export class ChordTester {
     else {
       this.currentSelectedChordInversion = undefined;
     }
+  }
+
+  // Converts MIDI notes to scientific notation. Adapted from
+  // https://github.com/danigb/tonal/tree/master/modules/midi (MIT License).
+  private convertMidiToScientificNotation(midiNote: number) {
+    let noteName = ChordTester.NOTE_NAMES[midiNote % 12];
+    let octave = Math.floor(midiNote / 12) - 1;
+    return noteName + octave;
   }
 
 }
