@@ -95,6 +95,10 @@ export class ChordTester {
     if (this.currentAnswer.answer.chordRoot === root) {
       this.currentAnswer.answer.chordRoot = "";
     }
+    else if (!this.answerIsValid(root, this.currentAnswer.answer.chordQuality,
+      this.currentAnswer.answer.chordInversion)) {
+      return;
+    }
     else {
       this.currentAnswer.answer.chordRoot = root;
     }
@@ -112,6 +116,10 @@ export class ChordTester {
     if (this.currentAnswer.answer.chordQuality === quality) {
       this.currentAnswer.answer.chordQuality = "";
     }
+    else if (!this.answerIsValid(this.currentAnswer.answer.chordRoot, quality,
+      this.currentAnswer.answer.chordInversion)) {
+      return;
+    }
     else {
       this.currentAnswer.answer.chordQuality = quality;
     }
@@ -128,6 +136,10 @@ export class ChordTester {
     // Checking if chord inversion button was disabled to unset the selected inversion.
     if (this.currentAnswer.answer.chordInversion === inversion) {
       this.currentAnswer.answer.chordInversion = "";
+    }
+    else if (!this.answerIsValid(this.currentAnswer.answer.chordRoot,
+      this.currentAnswer.answer.chordQuality, inversion)) {
+      return;
     }
     else {
       this.currentAnswer.answer.chordInversion = inversion;
@@ -311,4 +323,31 @@ export class ChordTester {
     return midiNotes.map((note) => note - 12);
   }
 
+  // Verifies that the answer is valid and displays an error to the user if it
+  // is not valid. True is returned if the answer is valid, false if not.
+  // Incomplete answers are considered valid because they cannot be fully
+  // verified.
+  private answerIsValid(chordRoot: string, chordQuality: string, chordInversion: string): boolean {
+    // Checking to see if the user selected a valid third inversion chord.
+    if (chordRoot !== "" && chordQuality !== "" && chordInversion !== "" &&
+        chordInversion === "Third Inversion" &&
+        !this.chordQualityHasThirdInversion(chordQuality)) {
+      window.alert(chordRoot + " " + chordQuality + " " +
+        "does not have a third inversion. Please select another chord.");
+      return false;
+    }
+
+    return true;
+  }
+
+  // Returns true if the chord quality has a third inversion.
+  private chordQualityHasThirdInversion(quality: string): boolean {
+    if (quality === "Major" || quality === "Minor" || quality === "Diminished" ||
+      quality === "Augmented" || quality === "Sus 2" || quality === "Sus 4") {
+      return false;
+    }
+    else {
+      return true;
+    }
+  }
 }

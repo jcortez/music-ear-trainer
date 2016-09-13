@@ -7,7 +7,7 @@
   <div id="chord-tester-piano">
     <beautiful-piano [pianoKeysPressed]="pianoKeys"></beautiful-piano>
   </div>
-  <a class="button-important" (click)="onSubmitButtonClicked()">Submit</a>
+  <a class="button-important" *ngIf="!answerSubmitted" (click)="onSubmitButtonClicked()">Submit</a>
 </div>
 
 <div id="right-panel">
