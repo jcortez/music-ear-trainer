@@ -6,6 +6,7 @@ import { AnswerResponse } from './answer-response';
 import { ActivatedRoute, Params } from '@angular/router';
 import { BUTTON_ENABLED_CSS_CLASS } from './button-enabled.directive';
 import { InfoService } from './info.service';
+import { LAST_MIDI_PIANO_KEY } from './beautiful-piano.component';
 declare var MIDI: any;
 
 @Component({
@@ -40,7 +41,7 @@ export class ChordTester {
   private currentSelectedChordInversion: ElementRef;
   // The pressed piano keys to show in the GUI. Each key is stored in scientific
   // notation.
-  public pianoKeys: string[];
+  public pianoKeys;
   // Used to convert MIDI notes to scientific notation.
   private static NOTE_NAMES = [ 'C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab', 'A', 'Bb', 'B'];
 
@@ -141,8 +142,15 @@ export class ChordTester {
       this.currentAnswerString = this.currentAnswer.answer.chordRoot + " "
         + this.currentAnswer.answer.chordQuality + " "
         + this.currentAnswer.answer.chordInversion;
+
       this.infoService.getMidiNotesForChord(this.currentAnswer.answer)
-        .then((allMidiNotes) => this.pianoKeys = allMidiNotes.midiNotes.map(this.convertMidiToScientificNotation))
+        .then((allMidiNotes) => {
+          let midiNotes = allMidiNotes.midiNotes;
+          if (this.containsMidiNoteOutsideOfRange(midiNotes)) {
+            midiNotes = this.transposeMidiNotesDownOctave(midiNotes);
+          }
+          this.pianoKeys = midiNotes.map((midiNote) => this.convertMidiToScientificNotation(midiNote));
+        })
         .catch(error => window.alert(error._body));
     }
     else {
@@ -227,7 +235,12 @@ export class ChordTester {
       this.currentNumberOfQuestionsAsked*100);
     this.correctAnswer = answerResponse.correctAnswer;
     this.answerSubmitted = true;
-    this.pianoKeys = answerResponse.midiNotes.map((midiNote) => this.convertMidiToScientificNotation(midiNote));
+
+    let midiNotes = answerResponse.midiNotes;
+    if (this.containsMidiNoteOutsideOfRange(midiNotes)) {
+      midiNotes = this.transposeMidiNotesDownOctave(midiNotes);
+    }
+    this.pianoKeys = midiNotes.map((midiNote) => this.convertMidiToScientificNotation(midiNote));
   }
 
   // Checks the user's answer by sending it to the server.
@@ -285,6 +298,17 @@ export class ChordTester {
     let noteName = ChordTester.NOTE_NAMES[midiNote % 12];
     let octave = Math.floor(midiNote / 12) - 1;
     return noteName + octave;
+  }
+
+  // Tests if at least one note in the array of MIDI notes is outside of the range
+  // of the piano shown in the GUI.
+  private containsMidiNoteOutsideOfRange(midiNotes: number[]): boolean {
+    return midiNotes.some((note) => note > LAST_MIDI_PIANO_KEY);
+  }
+
+  // Transposes all of the MIDI notes down one octave.
+  private transposeMidiNotesDownOctave(midiNotes: number[]): number[] {
+    return midiNotes.map((note) => note - 12);
   }
 
 }

@@ -1,5 +1,7 @@
 import { Component, ElementRef, Renderer, Input, SimpleChange } from '@angular/core';
 declare var piano: any;
+// The MIDI note for the last piano key that will be shown.
+export var LAST_MIDI_PIANO_KEY = 83;
 
 // AngularJS 2 component for the beautiful-piano library.
 @Component({
