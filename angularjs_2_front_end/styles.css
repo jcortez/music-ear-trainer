@@ -50,3 +50,9 @@ ul.button-list, ul.button-important-list {
 .button-important:hover {
   background-color: #DDDDDD;
 }
+
+/* Overridden CSS rules for the beautiful-piano component.*/
+#beautiful-piano li div.anchor:active, #beautiful-piano li div.anchor.active,
+#beautiful-piano li span:active, #beautiful-piano li span.active {
+  background: #FF4136;
+}

@@ -1,19 +1,10 @@
-h3 {
-  margin: 1em 0 0 0;
-}
-
 #score {
   text-align: center;
 }
 
-#left-panel {
-  height: 350px;
-  width: 570px;
-  float: left;
-}
-
 .answer-text {
   margin-bottom: 0.5em;
+  text-align: center;
 }
 
 .answer-correct {
@@ -29,30 +20,50 @@ h3 {
 }
 
 #chord-tester-piano {
+  margin-left: 500px;
   pointer-events: none;
   height: 250px;
 }
 
-#right-panel {
-  float: left;
+#chord-characteristics-container {
+  margin: 1em 8em 0em 8em;
+  border-style: solid;
+  border-color: black;
+  border-width: 0.2em;
+  border-radius: 0.3em;
 }
 
-#chord-roots {
-  float: left;
-  margin-left: 1.2em;
-  width: 11.3em;
+#chord-roots.button-list {
+  margin-left: 1em;
 }
 
-#chord-qualities {
-  float: left;
-  margin-left: 1.2em;
-  max-width: 21.4em;
+#chord-qualities.button-list {
+  margin-left: 1em;
 }
 
-#chord-inversions {
-  float: left;
-  margin-left: 1.2em;
-  max-width: 11.5em;
+#chord-inversions.button-list {
+  margin-left: 1em;
+}
+
+#chord-characteristics-tabs {
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  border-bottom-width: 0.15em;
+}
+
+.chord-characteristic-tab {
+  display: inline-block;
+  border-right-style: solid;
+  border-right-color: black;
+  border-right-width: thin;
+  margin: 0;
+  padding: 0 0.5em 0 0.5em;
+  cursor: pointer;
+  background-color: white;
+}
+
+.chord-characteristic-tab:hover, .chord-characteristic-tab-selected {
+  background-color: #AAAAAA;
 }
 
 ul.button-list {

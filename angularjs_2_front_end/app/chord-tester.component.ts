@@ -24,6 +24,9 @@ export class ChordTester {
   // All possible chord roots that can be selected for the chord.
   public TESTER_CHORD_ROOTS = [ "C", "C#/Db", "D", "D#/Eb", "E", "F", "F#/Gb",
   "G", "G#/Ab", "A", "A#/Bb", "B/Cb" ];
+  public showChordRootTab: boolean;
+  public showChordQualityTab: boolean;
+  public showChordInversionTab: boolean;
   public answerSubmitted: boolean;
   public correctAnswer: Chord;
   public userAnswerIsCorrect: boolean;
@@ -49,6 +52,9 @@ export class ChordTester {
     ActivatedRoute, private renderer: Renderer, private infoService: InfoService) { }
 
   ngOnInit() {
+    this.showChordRootTab = true;
+    this.showChordQualityTab = false;
+    this.showChordInversionTab = false;
     this.answerSubmitted = false;
     this.currentAnswerString = "";
     this.userAnswerIsCorrect = false;
@@ -79,6 +85,24 @@ export class ChordTester {
 
   ngAfterViewInit() {
     window.alert("Please click on the Chord Root, Chord Quality, and Chord Inversion buttons to make your selection and then click the Submit button.");
+  }
+
+  onChordRootTabClicked() {
+    this.showChordQualityTab = false;
+    this.showChordInversionTab = false;
+    this.showChordRootTab = true;
+  }
+
+  onChordQualityTabClicked() {
+    this.showChordInversionTab = false;
+    this.showChordRootTab = false;
+    this.showChordQualityTab = true;
+  }
+
+  onChordInversionTabClicked() {
+    this.showChordRootTab = false;
+    this.showChordQualityTab = false;
+    this.showChordInversionTab = true;
   }
 
   onChordRootSelected(root) {
@@ -150,11 +174,11 @@ export class ChordTester {
   // Showing selected chord characteristics as answer in GUI if the user has
   // selected from all characteristics.
   private showSelectedAnswerInGUI() {
-    if (this.allChordCharacteristicsSelected()) {
-      this.currentAnswerString = this.currentAnswer.answer.chordRoot + " "
-        + this.currentAnswer.answer.chordQuality + " "
-        + this.currentAnswer.answer.chordInversion;
+    this.currentAnswerString = this.currentAnswer.answer.chordRoot + " "
+      + this.currentAnswer.answer.chordQuality + " "
+      + this.currentAnswer.answer.chordInversion;
 
+    if (this.allChordCharacteristicsSelected()) {
       this.infoService.getMidiNotesForChord(this.currentAnswer.answer)
         .then((allMidiNotes) => {
           let midiNotes = allMidiNotes.midiNotes;
@@ -166,7 +190,6 @@ export class ChordTester {
         .catch(error => window.alert(error._body));
     }
     else {
-      this.currentAnswerString = "";
       this.pianoKeys = [ ];
     }
   }
@@ -186,6 +209,9 @@ export class ChordTester {
   }
 
   onNextQuestionButtonClicked() {
+    this.showChordRootTab = true;
+    this.showChordQualityTab = false;
+    this.showChordInversionTab = false;
     this.getNextQuestion().then(output => this.playQuestionMIDIFile());
   }
 

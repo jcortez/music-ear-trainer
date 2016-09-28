@@ -1,32 +1,27 @@
 <h2 id="score">Score: {{currentNumberOfCorrectAnswers}}/{{currentNumberOfQuestionsAsked}} ({{currentScorePercentage}}%)</h2>
 <a class="button-important" (click)="onPlayAgainButtonClicked()">Play Chord Again</a>
-<div id="left-panel">
-  <h3 class="answer-text" *ngIf="!answerSubmitted">Your Answer: {{currentAnswerString}}</h3>
-  <h3 class="answer-text" chordTesterAnswer [answerCorrect]=userAnswerIsCorrect *ngIf="answerSubmitted">Correct Answer is: {{correctAnswer.chordRoot}} {{correctAnswer.chordQuality}} {{correctAnswer.chordInversion}}</h3>
-  <a class="button-important" id="next-question-button" *ngIf="answerSubmitted" (click)="onNextQuestionButtonClicked()">Next Question</a>
-  <div id="chord-tester-piano">
-    <beautiful-piano [pianoKeysPressed]="pianoKeys"></beautiful-piano>
-  </div>
-  <a class="button-important" *ngIf="!answerSubmitted" (click)="onSubmitButtonClicked()">Submit</a>
+<h3 class="answer-text" *ngIf="!answerSubmitted">Your Answer: {{currentAnswerString}}</h3>
+<h3 class="answer-text" chordTesterAnswer [answerCorrect]=userAnswerIsCorrect *ngIf="answerSubmitted">Correct Answer is: {{correctAnswer.chordRoot}} {{correctAnswer.chordQuality}} {{correctAnswer.chordInversion}}</h3>
+<a class="button-important" id="next-question-button" *ngIf="answerSubmitted" (click)="onNextQuestionButtonClicked()">Next Question</a>
+<div id="chord-tester-piano">
+  <beautiful-piano [pianoKeysPressed]="pianoKeys"></beautiful-piano>
 </div>
+<a class="button-important" *ngIf="!answerSubmitted" (click)="onSubmitButtonClicked()">Submit</a>
 
-<div id="right-panel">
-  <div id="chord-roots">
-    <h3>Chord Root</h3>
-    <ul class="button-list">
-        <li crButtonEnabled class="button chord-root" *ngFor="let root of TESTER_CHORD_ROOTS" (click)="onChordRootSelected(root)" (chordRootButtonEnabled)="setCurrentSelectedChordRoot($event)">{{root}}</li>
+<div id="chord-characteristics-container">
+    <div id="chord-characteristics-tabs">
+      <!-- Comments inserted to remove the space all browsers generate between inline-block elements. -->
+      <h3 class="chord-characteristic-tab" (click)="onChordRootTabClicked()" [class.chord-characteristic-tab-selected]="showChordRootTab">Chord Root</h3><!--
+      --><h3 class="chord-characteristic-tab" (click)="onChordQualityTabClicked()" [class.chord-characteristic-tab-selected]="showChordQualityTab">Chord Quality</h3><!--
+      --><h3 class="chord-characteristic-tab" (click)="onChordInversionTabClicked()" [class.chord-characteristic-tab-selected]="showChordInversionTab">Chord Inversion</h3>
+    </div>
+    <ul id="chord-roots" class="button-list" [style.display]="showChordRootTab ? 'inherit': 'none'">
+      <li crButtonEnabled class="button chord-root" *ngFor="let root of TESTER_CHORD_ROOTS" (click)="onChordRootSelected(root)" (chordRootButtonEnabled)="setCurrentSelectedChordRoot($event)">{{root}}</li>
     </ul>
-  </div>
-  <div id="chord-qualities">
-    <h3>Chord Quality</h3>
-    <ul class="button-list">
+    <ul id="chord-qualities" class="button-list" [style.display]="showChordQualityTab ? 'inherit': 'none'">
       <li cqButtonEnabled class="button chord-quality" *ngFor="let quality of testerChordQualities" (click)="onChordQualitySelected(quality)" (chordQualityButtonEnabled)="setCurrentSelectedChordQuality($event)">{{quality}}</li>
     </ul>
-  </div>
-  <div id="chord-inversions">
-    <h3>Chord Inversion</h3>
-    <ul class="button-list">
+    <ul id="chord-inversions" class="button-list" [style.display]="showChordInversionTab ? 'inherit': 'none'">
       <li ciButtonEnabled class="button chord-inversion" *ngFor="let inversion of testerChordInversions" (click)="onChordInversionSelected(inversion)" (chordInversionButtonEnabled)="setCurrentSelectedChordInversion($event)">{{inversion}}</li>
     </ul>
-  </div>
 </div>

@@ -6,7 +6,7 @@ export var LAST_MIDI_PIANO_KEY = 83;
 // AngularJS 2 component for the beautiful-piano library.
 @Component({
   selector: 'beautiful-piano',
-  template: '',
+  template: ''
 })
 export class BeautifulPiano {
   // An array of the piano keys that are pressed. Each key is stored in scientific

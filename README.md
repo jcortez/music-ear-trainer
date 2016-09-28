@@ -9,3 +9,4 @@ REST web services currently implemented:
 - GET /modes/custom
 - GET /modes/custom/question
 - POST /modes/custom/answer
+- GET /info/midiNotes
