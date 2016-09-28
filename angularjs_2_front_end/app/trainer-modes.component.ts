@@ -23,7 +23,7 @@ export class TrainerModesComponent {
   }
 
   // Goes to the trainer mode that was selected.
-  onTrainerModeSelected(trainerMode) {
+  onTrainerModeSelected(trainerMode: TrainerMode) {
     // Right now, only Custom Mode is implemented.
     if (trainerMode.name === "Challenge Mode") {
       window.alert("Challenge Mode is not implemented yet. Please select Custom Mode.");

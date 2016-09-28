@@ -1,9 +1,7 @@
 Front-end:
-- Use newer AngularJS 2 routing after it is finalized
 - Grunt production build for AngularJS 2 front-end that uses grunt-contrib-uglify
 - Integrate Grunt with Maven build using grunt-maven-plugin and package front-end in WAR
 
 Back-end:
-- Disable HTTP caching for getting new questions web services
 - Use HATEOAS to get next/previous trainer states
 - Integrate with Docker

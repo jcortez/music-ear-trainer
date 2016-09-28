@@ -30,8 +30,8 @@ export class ChordTester {
   public answerSubmitted: boolean;
   public correctAnswer: Chord;
   public userAnswerIsCorrect: boolean;
-  public testerChordQualities;
-  public testerChordInversions;
+  public testerChordQualities: string[];
+  public testerChordInversions: string[];
   // The user's answer made up of the selected chord characteristics.
   private currentAnswer: Answer;
   public currentAnswerString: string;
@@ -44,7 +44,7 @@ export class ChordTester {
   private currentSelectedChordInversion: ElementRef;
   // The pressed piano keys to show in the GUI. Each key is stored in scientific
   // notation.
-  public pianoKeys;
+  public pianoKeys: string[];
   // Used to convert MIDI notes to scientific notation.
   private static NOTE_NAMES = [ 'C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab', 'A', 'Bb', 'B'];
 
@@ -63,16 +63,16 @@ export class ChordTester {
     this.currentScorePercentage = 0;
     this.pianoKeys = [ ];
 
-    let routerChordQualities = "";
-    let routerChordInversions = "";
+    let routerChordQualities: string[] = [ ];
+    let routerChordInversions: string[] = [ ];
     this.activatedRoute.params.forEach((param: Params) => {
       routerChordQualities = param['trainerChordQualities'].split(',');
       routerChordInversions = param['trainerChordInversions'].split(',');
     });
     // Checking to make sure router parameters exist.
-    if (routerChordQualities === "" || routerChordQualities === null ||
+    if (routerChordQualities === [ ] || routerChordQualities === null ||
       Object.keys(routerChordQualities).length === 0 ||
-      routerChordInversions === "" || routerChordInversions === null ||
+      routerChordInversions === [ ] || routerChordInversions === null ||
       Object.keys(routerChordInversions).length === 0) {
       window.alert("Error: Please start the Music Ear Trainer again.");
       return;
@@ -105,7 +105,7 @@ export class ChordTester {
     this.showChordInversionTab = true;
   }
 
-  onChordRootSelected(root) {
+  onChordRootSelected(root: string) {
     // There is no easy way to accomplish this with an attribute directive, so
     // this logic (and similarly for the chord quality and inversion) has to be
     // done here.
@@ -129,7 +129,7 @@ export class ChordTester {
     this.showSelectedAnswerInGUI();
   }
 
-  onChordQualitySelected(quality) {
+  onChordQualitySelected(quality: string) {
     if (this.currentSelectedChordQuality !== undefined &&
         this.currentSelectedChordQuality.nativeElement.textContent !== quality) {
       this.renderer.setElementClass(this.currentSelectedChordQuality.nativeElement,
@@ -150,7 +150,7 @@ export class ChordTester {
     this.showSelectedAnswerInGUI();
   }
 
-  onChordInversionSelected(inversion) {
+  onChordInversionSelected(inversion: string) {
     if (this.currentSelectedChordInversion !== undefined &&
         this.currentSelectedChordInversion.nativeElement.textContent !== inversion) {
       this.renderer.setElementClass(this.currentSelectedChordInversion.nativeElement,
@@ -301,7 +301,7 @@ export class ChordTester {
   }
 
   // Called when the chordRootButtonEnabled event is raised.
-  public setCurrentSelectedChordRoot($event) {
+  public setCurrentSelectedChordRoot($event: any) {
     if ($event.buttonEnabled) {
       this.currentSelectedChordRoot = $event.element;
     }
@@ -311,7 +311,7 @@ export class ChordTester {
   }
 
   // Called when the chordQualityButtonEnabled event is raised.
-  public setCurrentSelectedChordQuality($event) {
+  public setCurrentSelectedChordQuality($event:any) {
     if ($event.buttonEnabled) {
       this.currentSelectedChordQuality = $event.element;
     }
@@ -321,7 +321,7 @@ export class ChordTester {
   }
 
   // Called when the chordInversionButtonEnabled event is raised.
-  public setCurrentSelectedChordInversion($event) {
+  public setCurrentSelectedChordInversion($event:any ) {
     if ($event.buttonEnabled) {
       this.currentSelectedChordInversion = $event.element;
     }
@@ -332,7 +332,7 @@ export class ChordTester {
 
   // Converts MIDI notes to scientific notation. Adapted from
   // https://github.com/danigb/tonal/tree/master/modules/midi (MIT License).
-  private convertMidiToScientificNotation(midiNote: number) {
+  private convertMidiToScientificNotation(midiNote: number): string {
     let noteName = ChordTester.NOTE_NAMES[midiNote % 12];
     let octave = Math.floor(midiNote / 12) - 1;
     return noteName + octave;

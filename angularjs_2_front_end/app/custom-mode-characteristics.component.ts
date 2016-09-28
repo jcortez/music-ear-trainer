@@ -70,7 +70,7 @@ export class CustomModeCharacteristics {
   onStartTrainerButtonSelected() {
     // Building an array of selected chord qualities. If none were selected,
     // then all are available to be tested on and they are added to the array.
-    let chordQualities = [];
+    let chordQualities: string[] = [ ];
     this.selectedChordQualities.forEach(function(value, key, map){
       if (value === true) {
         chordQualities.push(key);
@@ -82,7 +82,7 @@ export class CustomModeCharacteristics {
 
     // Building an array of selected chord inversions. If none were selected,
     // then all are available to be tested on and they are added to the array.
-    let chordInversions = [];
+    let chordInversions: string[] = [ ];
     this.selectedChordInversions.forEach(function(value, key, map){
       if (value === true) {
         chordInversions.push(key);
@@ -92,7 +92,7 @@ export class CustomModeCharacteristics {
       chordInversions = this.allChordCharacteristics.trainerChordInversions;
     }
 
-    let chordCharacteristics = new ChordCharacteristics(chordQualities, chordInversions);
+    let chordCharacteristics: ChordCharacteristics = new ChordCharacteristics(chordQualities, chordInversions);
     this.router.navigate(['/chordTester', chordCharacteristics]);
   }
 

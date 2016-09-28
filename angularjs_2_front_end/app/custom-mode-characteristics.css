@@ -15,6 +15,7 @@
 ul.button-list {
   width: 50%;
   margin: 1em auto 2em auto;
+  text-align: center;
 }
 
 .button.chord-characteristic {
